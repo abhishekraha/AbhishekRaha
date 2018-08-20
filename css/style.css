@@ -1,0 +1,173 @@
+/* Full Body Styling */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: my_font;
+}
+
+/* Editing container-fluid Default Properties*/
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+/* Left Side of Screen*/
+.left-side{
+    background: url('../images/what-the-hex-dark.png') repeat; /* Background For Left Side */
+    color: white;
+}
+
+/* Right Side of Screen */
+.right-side{
+    background: url('../images/what-the-hex.png') repeat; /* Background Image For Right Side*/
+}
+
+/* Left Side of Screen Styling */
+/* Profile Picture Div CSS */
+.profile_pic{
+    background: url('../images/what-the-hex.png') repeat;
+    border-radius: 220px;
+    max-height: 220px;
+	max-width: 180px;
+    
+}
+
+/* My Pic */
+#p_pic{
+    max-height: 200px;
+	max-width: 200px;
+	border-radius: 200px;
+}
+
+/* My Name's Formatting */
+#f_name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 280%;
+}
+
+/* My Name's Formatting except for the First Word */
+#l_name{
+    font-weight: normal;
+    font-size: 90%;
+}
+/* About Me Text */
+.about_me {
+    margin: 10%;
+}
+
+/* Download Button */
+.download_btn{
+    width: 70%;
+    margin: 5% 15%;
+    padding: 5%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}
+
+.download_btn:hover{
+    border: 1px dashed whitesmoke;
+    background-color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.download_btn a {
+    text-decoration: none;
+    color: white;    
+}
+
+/* Contact Details */
+.contact_details a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact_h{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* Social Links */
+
+.social_links span{
+    font-size: 120%;
+    font-weight: bolder;
+}
+.social_links ul {
+    list-style: none;
+}
+
+.social_links li {
+    float: left;
+    margin-left: 15%;
+}
+
+.social_links img {
+	max-height: 40px;
+	max-width: 40px;
+}
+
+#site_by{
+    color: white; 
+    text-align: center;
+    bottom: 0;
+    background: url('../images/what-the-hex-dark2.png') repeat;
+    padding: 1% 0;
+}
+
+
+/*Right Side of the Screen Styling */
+
+.nav_bar ul{
+    list-style: none;
+    
+}
+.nav_bar ul li{
+    float: left;
+}
+.nav_bar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 5px 10px 5px;
+    margin: 5px;
+    font-weight: bold;
+    border-bottom: 3px solid #333;
+}
+
+.nav_bar ul li a:hover{
+    border-bottom: 3px dashed #333;
+}
+.nav_bar ul li a:active{
+    border-bottom: 3px solid red;
+}
+.content {
+    padding-top: 5%;
+}
+.profile_bar{
+	border-bottom: 2px solid #403F44;
+    padding-bottom: 5%;
+}
+.school {
+	border-bottom: 1px solid #403F44;
+	width: 90%;
+	margin: auto;
+	padding: 20px 0 10px 0;
+}
+
+
+
+
+@media screen and (max-width: 720px){
+    .nav_bar ul{
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px){
+    .nav_bar{
+        display: none;
+    }
+}
