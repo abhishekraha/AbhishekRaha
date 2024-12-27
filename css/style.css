@@ -211,6 +211,7 @@ p {
 .mainsection {
   background: url("../images/main_bg.jpeg")
     no-repeat;
+  background-attachment:fixed;
   background-size: cover;
 }
 
@@ -298,6 +299,7 @@ p {
 .aboutme {
   background: url("../images/james-bold-lMQv3xVa8X4-unsplash.jpg")
     no-repeat;
+  background-attachment:fixed;
   background-size: cover;
 }
 
@@ -315,6 +317,7 @@ p {
 
 .skills {
   background: #1e1e2f;
+  background-attachment:fixed;
 }
 
 .skillcontainer {
@@ -405,7 +408,8 @@ p {
 
 .experience {
     background: url("../images/work-timeline.jpg")
-    no-repeat;
+     no-repeat;
+    background-attachment:fixed;
     background-size: cover;
 }
 
@@ -674,6 +678,7 @@ label {
 
 .social-links a:hover {
   color: #ff6363;
+  padding:20px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;

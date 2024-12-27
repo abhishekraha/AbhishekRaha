@@ -1,3 +1,3 @@
 # AbhishekRaha
 
-https://dskthelegend.github.io/AbhishekRaha/
+https://abhishekraha.github.io/AbhishekRaha/

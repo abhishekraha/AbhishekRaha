@@ -16,7 +16,12 @@ $(document).ready(function () {
   // // input text for typing animation
   // $("#holder").writeText("SOFTWARE DEVELOPER");
 
-  const keywords = ["Software Developer", "Coder", "Programmer", "Engineer"];
+  const keywords = [
+    "Hey There",
+    "I am a Software Engineer currently working at HSBC",
+    "I am currently working in low latency space",
+
+    ];
   const holder = document.getElementById("holder");
 
   let wordIndex = 0;
