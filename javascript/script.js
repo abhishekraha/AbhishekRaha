@@ -18,9 +18,8 @@ $(document).ready(function () {
 
   const keywords = [
     "Hey There",
-    "I am a Software Engineer currently working at HSBC",
-    "I am currently working in low latency space",
-
+    "I am a Low Latency Developer at HSBC",
+    
     ];
   const holder = document.getElementById("holder");
 
