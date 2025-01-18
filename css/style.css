@@ -862,3 +862,40 @@ label {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
+.slide-image {
+    display: none;
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
+
+.slide-image.active {
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+.nav-btn {
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.images-container {
+    position: relative;
+}
