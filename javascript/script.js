@@ -117,8 +117,8 @@ $(document).ready(function () {
     scrollBar: true,
     responsiveWidth: 400,
     navigation: true,
-    navigationTooltips: ["home", "about", "skill","portfolio", "contact", "connect","mainsection","aboutme","experience"],
-    anchors: ["home", "about", "skill","portfolio", "contact", "connect","mainsection","aboutme","experience"],
+    navigationTooltips: ["home", "about", "workExperience","technologies", "projects", "contact"],
+    anchors: ["home", "about", "workExperience","technologies", "projects", "contact"],
     menu: "#myMenu",
     fitToSection: false,
 
@@ -254,3 +254,40 @@ $(document).ready(function () {
     });
   });
 });
+
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.slide-image');
+
+// Function to change images
+function changeImage() {
+    // Remove the active class from the current image
+    images[currentImageIndex].classList.remove('active');
+
+    // Update the index to show the next image
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+
+    // Add the active class to the next image
+    images[currentImageIndex].classList.add('active');
+}
+
+// Function to show the previous image
+function prevImage() {
+    // Remove the active class from the current image
+    images[currentImageIndex].classList.remove('active');
+
+    // Update the index to show the previous image
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+
+    // Add the active class to the previous image
+    images[currentImageIndex].classList.add('active');
+}
+
+// Initial image display
+images[currentImageIndex].classList.add('active');
+
+// Change images automatically every 3 seconds
+setInterval(changeImage, 3000);
+
+// Manual controls
+document.querySelector('.next-btn').addEventListener('click', changeImage);
+document.querySelector('.prev-btn').addEventListener('click', prevImage);
