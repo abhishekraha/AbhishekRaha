@@ -3,418 +3,796 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Abhishek Raha</title>
-    <meta name="description" content="Web designer and front-end developer">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet"
-          type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Raha | Senior Backend Engineer | Java & AI-Assisted Systems</title>
+    <meta name="description"
+          content="Portfolio of Abhishek Raha - Senior Backend Engineer with 7+ years building low-latency trading systems, OMS, FIX gateways, event-driven messaging (Kafka, Aeron), GCP cloud architecture, and AI-led engineering at HSBC.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- Custom Theme Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-<!-- partial:index.partial.html -->
 
-<!-- navbar header -->
-<div class="nav-header">
-    <div class="nav-brand">
-        <p style="color:white;font-size: 300%;font-weight: bold;">A<span style="color:#FF6363">/</span>R</p>
+<!-- Navbar Header -->
+<header class="nav-header">
+    <div class="nav-brand-container">
+        <div class="nav-brand">
+            <a href="#home">A<span class="slash">/</span>R</a>
+        </div>
+        <div class="sys-status-badge">
+            <span class="sys-pulse-dot"></span>
+            <span>SYSTEM: ONLINE // 7+ YRS PROD</span>
+        </div>
     </div>
-    <i class="fa fa-bars fa-3x"></i>
-    <div class="header-links">
-        <ul>
-            <li data-menuanchor="fifthPage"><a href="#contact">CONTACT</a></li>
-            <li data-menuanchor="fourthPage"><a href="#technologies">TECHNOLOGIES</a></li>
-            <li data-menuanchor="thirdPage"><a href="#workExperience">WORK EXP</a></li>
-            <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-            <li data-menuanchor="firstPage"><a href="#home">HOME</a></li>
+
+    <i class="fa fa-bars"></i>
+
+    <nav class="header-links">
+        <ul id="myMenu">
+            <li data-menuanchor="home"><a href="#home">HOME</a></li>
+            <li data-menuanchor="terminal"><a href="#terminal">TERMINAL</a></li>
+            <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+            <li data-menuanchor="achievements"><a href="#achievements">METRICS</a></li>
+            <li data-menuanchor="workExperience"><a href="#workExperience">EXPERIENCE</a></li>
+            <li data-menuanchor="technologies"><a href="#technologies">SKILLS</a></li>
+            <li data-menuanchor="recognition"><a href="#recognition">CERTS & AWARDS</a></li>
+            <li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
         </ul>
-    </div>
-</div>
-<!-- end navbar header -->
+    </nav>
+</header>
+<!-- End Navbar Header -->
 
-<!-- sidebar slider -->
+<!-- Sidebar Drawer for Mobile -->
 <div class="nav-screen">
-    <i class="fa fa-times fa-3x"></i>
+    <i class="fa fa-times"></i>
     <div class="nav-container">
         <div class="nav-links">
-            <ul id='myMenu'>
-                <li data-menuanchor="firstPage"><a href="#home">HOME</a></li>
-                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-                <li data-menuanchor="thirdPage"><a href="#workExperience">WORK EXP</a></li>
-                <li data-menuanchor="fourthPage"><a href="#technologies">TECHNOLOGIES</a></li>
-                <li data-menuanchor="fifthPage"><a href="#contact">CONTACT</a></li>
+            <ul>
+                <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href="#terminal"><i class="fa fa-terminal"></i> TERMINAL</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+                <li><a href="#achievements"><i class="fa fa-line-chart"></i> METRICS</a></li>
+                <li><a href="#workExperience"><i class="fa fa-briefcase"></i> EXPERIENCE</a></li>
+                <li><a href="#technologies"><i class="fa fa-code"></i> SKILLS</a></li>
+                <li><a href="#recognition"><i class="fa fa-trophy"></i> CERTS & AWARDS</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
             </ul>
         </div>
     </div>
 </div>
-<!-- end navbar slider -->
+<!-- End Sidebar Drawer -->
 
-<!-- begin fullpage -->
-
+<!-- Main Fullpage Container -->
 <div id="fullpage">
 
-    <!-- begin section -->
-
+    <!-- ==========================================
+         Section 1: Hero / Home
+         ========================================== -->
     <div class="section mainsection" data-anchor="home">
-        <div class="opaque-bg-black animated fadeInDown">
-            <p style="color:white;font-size: 600%;font-weight: bold;">ABHISHEK<span style="color:#FF6363">/</span>RAHA
-            </p>
-            <p style="color:white;font-size: 200%;font-weight: bold;"><span id="holder"></span><span
-                    class="blinking-cursor">|</span></p>
+        <div class="hero-overlay-grid"></div>
+        <div class="hero-content animated fadeInDown">
+            <div class="hero-badge">
+                <i class="fa fa-shield"></i> Mission-Critical Financial Systems
+            </div>
+            <h1 class="hero-title">
+                ABHISHEK<span class="accent-slash">/</span>RAHA
+            </h1>
+            <div class="hero-subtitle">
+                SENIOR BACKEND ENGINEER | JAVA | LOW-LATENCY & ACTIVE AI-DRIVEN DEVELOPMENT
+            </div>
+            
+            <div class="hero-typewriter-box">
+                <span class="hero-typewriter-text" id="holder"></span><span class="blinking-cursor">|</span>
+            </div>
+
+            <div class="hero-pills">
+                <span class="tech-pill"><i class="fa fa-check-circle"></i> 7+ Yrs @ HSBC Cash Equities</span>
+                <span class="tech-pill"><i class="fa fa-bolt"></i> Low-Latency Trading & OMS</span>
+                <span class="tech-pill"><i class="fa fa-life-ring"></i> OMS & Market Connectivity Prod Support</span>
+                <span class="tech-pill"><i class="fa fa-shield"></i> Accredited Enterprise Engineer (HSBC)</span>
+                <span class="tech-pill"><i class="fa fa-cloud"></i> GCP Certified Cloud Architect</span>
+                <span class="tech-pill"><i class="fa fa-cubes"></i> Kafka • Aeron • FIX Protocol</span>
+                <span class="tech-pill"><i class="fa fa-code"></i> AI-Native Software Development</span>
+                <span class="tech-pill"><i class="fa fa-terminal"></i> Working Knowledge of UNIX / Shell</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#terminal" class="btn-tech-primary">
+                    <i class="fa fa-terminal"></i> Launch Terminal
+                </a>
+                <a href="#workExperience" class="btn-tech-secondary">
+                    <i class="fa fa-briefcase"></i> Experience
+                </a>
+                <a href="#achievements" class="btn-tech-secondary">
+                    <i class="fa fa-tachometer"></i> Telemetry & Impact
+                </a>
+                <a href="#contact" class="btn-tech-secondary">
+                    <i class="fa fa-paper-plane"></i> Connect
+                </a>
+            </div>
         </div>
-        <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+        <i id="moveDown" class="fa fa-chevron-down bounce"></i>
     </div>
-    <!-- end section -->
 
-    <!-- begin section -->
+    <!-- ==========================================
+         Section 2: Interactive Terminal Emulator
+         ========================================== -->
+    <div class="section" data-anchor="terminal" id="terminal-section" style="background:#070a10;">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// INTERACTIVE SHELL</span>
+                <h2 class="section-title">FinTech <span class="accent">Gateway</span> Console</h2>
+                <p class="section-desc">Type commands below or click the quick pills to query live system metrics, architecture specs, and career telemetry.</p>
+            </div>
 
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <span class="terminal-title">abhishek@cash-equities-gw: ~/resume</span>
+                    <span class="sys-status-badge" style="padding: 2px 8px; font-size: 0.68rem;">TLS v1.3</span>
+                </div>
+                
+                <div class="terminal-body">
+                    <div id="terminal-output" class="terminal-output">
+<span class="term-dim">========================================================================</span>
+<span class="term-cyan">FinTech Gateway v4.2.0-RELEASE (x86_64-pc-linux-gnu)</span>
+<span class="term-green">System Status: ONLINE</span> | <span class="term-yellow">Low-Latency Mode: ACTIVE</span> | <span class="term-coral">Zero Downtime: ENABLED</span>
+Type <span class="term-yellow">'help'</span> to see available commands or click the shortcut chips below.
+<span class="term-dim">========================================================================</span>
+                    </div>
+                    <div class="terminal-input-row">
+                        <span class="terminal-prompt">abhishek@fintech-gw:~$</span>
+                        <input type="text" id="terminal-cmd-input" class="terminal-input" placeholder="type 'help', 'summary', 'stack', 'metrics'..." autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+
+                <div class="terminal-chips">
+                    <span class="term-chip" data-cmd="help">help</span>
+                    <span class="term-chip" data-cmd="summary">summary</span>
+                    <span class="term-chip" data-cmd="metrics">metrics</span>
+                    <span class="term-chip" data-cmd="stack">stack</span>
+                    <span class="term-chip" data-cmd="experience">experience</span>
+                    <span class="term-chip" data-cmd="certs">certs</span>
+                    <span class="term-chip" data-cmd="awards">awards</span>
+                    <span class="term-chip" data-cmd="ai">ai-engineering</span>
+                    <span class="term-chip" data-cmd="cat resume.json">cat resume.json</span>
+                    <span class="term-chip" data-cmd="clear">clear</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         Section 3: About Me & Code Snippet
+         ========================================== -->
     <div class="section aboutme" data-anchor="about">
-        <div class="content opaque-bg-white">
-            <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-            <pre class="wow fadeInDown" data-wow-delay="0.2s"
-                 style="text-align: justify;word-wrap: break-word;white-space: pre-wrap;">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// WHO I AM</span>
+                <h2 class="section-title">About <span class="accent">Abhishek</span></h2>
+            </div>
 
-                        Hey, I'm Abhishek Raha!
+            <div class="about-split-layout">
+                <!-- Bio Card -->
+                <div class="tech-card-glass about-bio-card">
+                    <div class="about-bio-text">
+                        <p style="font-size: 1.15rem; font-weight: 600; color: #ffffff;">
+                            Hey, I'm Abhishek Raha! 👋
+                        </p>
+                        <p>
+                            I'm a Senior Backend Engineer with <strong>7+ years of experience</strong> building, scaling, and operating mission-critical financial technology at <strong>HSBC Cash Equities Technology</strong>.
+                        </p>
+                        <div class="about-bio-highlight">
+                            "I build things, break things, fix things, optimize systems for scale and speed, and pretend I knew what I was doing all along."
+                        </div>
+                        <p>
+                            My bread and butter is high-throughput, low-latency engineering: <strong>Core Java, Scala, Aeron, Apache Kafka, FIX gateways</strong>, and <strong>Order Management Systems (OMS)</strong>. I also act as IT Service Owner, architecting cloud environments on GCP and driving <strong>active AI-native software development</strong>.
+                        </p>
+                        <p>
+                            I don't just write prompts — I actively develop software using AI coding agents across the entire lifecycle: building features, deep debugging, complex multi-file refactoring, test generation, and developing autonomous agent workflows that accelerate engineering velocity.
+                        </p>
+                        <p>
+                            When I'm not reigning tyranny over code, I'm usually out on the road collecting memories, miles, and questionable life choices — or sleeping like I've been paid to do it.
+                        </p>
+                    </div>
 
-I'm a software developer — I
-                                build things,
-                                break things,
-                                fix things,
-                and pretend I knew what I was doing all along.
+                    <div class="about-meta-list">
+                        <div class="about-meta-item">
+                            <i class="fa fa-map-marker"></i> India
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-briefcase"></i> HSBC Technology
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-institution"></i> Accredited Enterprise Engineer (HSBC)
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-cloud"></i> GCP Cloud Architect
+                        </div>
+                    </div>
+                </div>
 
-When I'm not reigning tyranny over code,
-I'm usually out on the road — collecting memories, miles, and questionable life choices
-or sleeping like I’ve been paid to do it.
-            </pre>
+                <!-- Code Card -->
+                <div class="about-code-card">
+                    <div class="code-editor-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="code-editor-tabs">
+                            <span class="code-tab">AbhishekRaha.java</span>
+                        </div>
+                        <span style="font-size: 0.75rem; color: #64748b;">UTF-8</span>
+                    </div>
+                    <div class="code-body">
+<pre><code><span class="kw">package</span> <span class="var">com.abhishek.fintech</span>;
+
+<span class="kw">public class</span> <span class="type">SeniorBackendEngineer</span> {
+    <span class="kw">private final</span> <span class="type">String</span> <span class="var">name</span> = <span class="str">"Abhishek Raha"</span>;
+    <span class="kw">private final</span> <span class="type">String</span> <span class="var">role</span> = <span class="str">"Consultant Specialist"</span>;
+    <span class="kw">private final</span> <span class="type">String</span> <span class="var">org</span>  = <span class="str">"HSBC Cash Equities"</span>;
+    <span class="kw">private final int</span>    <span class="var">yearsExp</span> = <span class="num">7</span>;
+
+    <span class="kw">private final</span> <span class="type">String</span>[] <span class="var">coreSkills</span> = {
+        <span class="str">"Core Java"</span>, <span class="str">"Scala"</span>, <span class="str">"Python"</span>,
+        <span class="str">"Apache Kafka"</span>, <span class="str">"Aeron Messaging"</span>,
+        <span class="str">"FIX Protocol"</span>, <span class="str">"OMS Architecture"</span>,
+        <span class="str">"GCP Cloud Architecture"</span>, <span class="str">"IaC"</span>
+    };
+
+    <span class="comment">// Active AI-Driven Software Engineering (Not just prompts!)</span>
+    <span class="kw">public void</span> <span class="type">engineerProductionSystem</span>() {
+        <span class="var">decoupleLegacyComponents</span>();
+        <span class="var">optimizeApplicationPipeline</span>(); <span class="comment">// -5~6 min latency</span>
+        <span class="var">developWithCodingAgents</span>(); <span class="comment">// Hands-on feature implementation & tests</span>
+        <span class="var">automateReleasePipelines</span>(); <span class="comment">// -90% access</span>
+        <span class="var">deployAutonomousWorkflows</span>(); <span class="comment">// Reusable agent skills</span>
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- end section -->
 
+    <!-- ==========================================
+         Section 4: Selected Achievements & Telemetry
+         ========================================== -->
+    <div class="section" data-anchor="achievements" style="background:#090d16;">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// PRODUCTION IMPACT</span>
+                <h2 class="section-title">Selected <span class="accent">Achievements</span></h2>
+                <p class="section-desc">Measurable impact delivered across low-latency financial systems, compliance, and enterprise engineering automation.</p>
+            </div>
 
-    <!-- begin section -->
+            <div class="achievements-grid">
+                <div class="telemetry-card highlight">
+                    <div class="telemetry-icon"><i class="fa fa-bolt"></i></div>
+                    <div class="telemetry-value">5–6 min</div>
+                    <div class="telemetry-label">Efficiency Boost</div>
+                    <p class="telemetry-detail">Improved processing efficiency by 5–6 minutes through targeted application refactoring and performance optimization in a low-latency trading platform.</p>
+                </div>
 
+                <div class="telemetry-card">
+                    <div class="telemetry-icon"><i class="fa fa-lock"></i></div>
+                    <div class="telemetry-value">90%</div>
+                    <div class="telemetry-label">Security & Access Cut</div>
+                    <p class="telemetry-detail">Reduced privileged production access by 90% by automating release processes, strengthening operational security and audit readiness.</p>
+                </div>
+
+                <div class="telemetry-card">
+                    <div class="telemetry-icon"><i class="fa fa-shield"></i></div>
+                    <div class="telemetry-value">95%</div>
+                    <div class="telemetry-label">Compliance Adherence</div>
+                    <p class="telemetry-detail">Improved IT compliance adherence by 95% with a monitoring tool for release metrics & policy breaches, adopted across multiple asset classes.</p>
+                </div>
+
+                <div class="telemetry-card">
+                    <div class="telemetry-icon"><i class="fa fa-cogs"></i></div>
+                    <div class="telemetry-value">0 Downtime</div>
+                    <div class="telemetry-label">Zero Unplanned Downtime</div>
+                    <p class="telemetry-detail">Led critical OMS component upgrades and direct broker routing integrations with zero downtime transitions during active market regimes.</p>
+                </div>
+
+                <div class="telemetry-card">
+                    <div class="telemetry-icon"><i class="fa fa-code"></i></div>
+                    <div class="telemetry-value">AI-Driven</div>
+                    <div class="telemetry-label">Full-Cycle Engineering</div>
+                    <p class="telemetry-detail">Active software development using AI coding agents: driving feature delivery, multi-file refactoring, automated testing, and reusable enterprise agent workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         Section 5: Work Experience Timeline
+         ========================================== -->
     <div class="section experience" data-anchor="workExperience">
-        <div id="inner-experience-div">
-            <section id="work-experience">
-                <h1>Work Experience</h1>
-                <div class="timeline">
-                    <div class="timeline-item left">
-                        <div class="timeline-date">November 2023 – Present</div>
-                        <div class="timeline-content">
-                            <h2>Consultant Specialist</h2>
-                            <p><strong>HSBC</strong></p>
-                            <ul>
-                                <li>High-Performance Trading Platform: Part of the core development team responsible for
-                                    maintain and optimize low-latency trading systems.
-                                </li>
-                                <li>System Development & Integration: Led the integration of a market gateway vendor
-                                    product into HSBC’s ecosystem, coordinating across multiple teams and improving
-                                    system efficiency.
-                                </li>
-                                <li>Automation & Deployment: Created a one-click deployment solution, streamlining the
-                                    integration of vendor software within the Cash Equities ecosystem, enhancing
-                                    operational agility.
-                                </li>
-                            </ul>
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// CAREER RECORD</span>
+                <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+                <p class="section-desc">7+ years of continuous ownership, system decoupling, and technical leadership at HSBC Technology INDIA.</p>
+            </div>
+
+            <div class="experience-list">
+                <!-- Role 1 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div>
+                            <h3 class="exp-role-title">Consultant Specialist – Cash Equities Technology</h3>
+                            <div class="exp-company">HSBC Technology INDIA <span class="exp-company-sub">// Strategic Migration & Cloud IaC</span></div>
                         </div>
+                        <span class="exp-badge-date">Nov 2023 – Present</span>
                     </div>
-                    <div class="timeline-item right">
-                        <div class="timeline-date">February 2022 – November 2023</div>
-                        <div class="timeline-content">
-                            <h2>Senior Software Developer</h2>
-                            <p><strong>HSBC</strong></p>
-                            <ul>
-                                <li>System Architecture Optimization: Reduced latency and improved time-to-market by
-                                    decoupling legacy Order Management System (OMS) components.
-                                </li>
-                                <li>Order Flow Enhancement: Designed and implemented processes to re-route orders
-                                    directly to brokers, bypassing intermediate layers and significantly cutting
-                                    processing time.
-                                </li>
-                                <li>Legacy System Upgrades: Successfully upgraded key components of the OMS, ensuring
-                                    smooth production support and minimizing system downtime.
-                                </li>
-                                <li>Stakeholder Engagement: Liaised with business stakeholders, vendors, and exchanges
-                                    to deliver new functionalities and resolve critical production issues.
-                                </li>
-                                <li>Code Review & QA: Performed comprehensive code reviews to ensure adherence to best
-                                    practices and production standards.
-                                </li>
-                            </ul>
-                        </div>
+
+                    <div class="exp-tags">
+                        <span class="exp-tag">Core Java</span>
+                        <span class="exp-tag">GCP</span>
+                        <span class="exp-tag">IaC / Ansible</span>
+                        <span class="exp-tag">Vendor Software Onboarding</span>
+                        <span class="exp-tag">IT Service Owner</span>
+                        <span class="exp-tag">Production Support & Governance</span>
+                        <span class="exp-tag">AI-Native Dev</span>
                     </div>
-                    <div class="timeline-item left">
-                        <div class="timeline-date">July 2019 – January 2022</div>
-                        <div class="timeline-content">
-                            <h2>Software Developer</h2>
-                            <p><strong>HSBC</strong></p>
-                            <ul>
-                                <li>Market Expansion: Spearheaded FIX protocol onboarding for multiple brokers and
-                                    markets across EMEA and MENA regions, increasing market access for the business.
-                                </li>
-                                <li>Gateway Development: Enhanced trading gateway capabilities to meet client demands
-                                    for faster, more reliable market access.
-                                </li>
-                                <li>DevOps Automation: Streamlined CI/CD processes by improving Jenkins pipelines and
-                                    automating manual deployment tasks, reducing deployment times and errors.
-                                </li>
-                                <li>Infrastructure Control: Joined the UNIX SA Community, gaining enhanced control over
-                                    infrastructure and reducing reliance on central teams.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item right">
-                        <div class="timeline-date">May 2018 – June 2018</div>
-                        <div class="timeline-content">
-                            <h3>Software Developer Intern</h3>
-                            <p><strong>GiBots</strong></p>
-                            <ul>
-                                <li>Developed an instant messaging platform using Node.js, AngularJS, and Socket.io.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Lead a team of three engineers through migration from a legacy vendor platform to a strategic solution, providing technical direction, architectural design, and hands-on code reviews.</li>
+                        <li>Engage third-party software vendors to onboard solutions into the bank, rigorously coordinating technical and operational requirements with internal engineering, operations, and risk stakeholders.</li>
+                        <li>Designed and implemented Infrastructure as Code (IaC) to provision and configure the Google Cloud Platform (GCP) environment for vendor software, establishing repeatable and maintainable deployments.</li>
+                        <li>Define end-to-end processes for running and supporting vendor software within the bank; liaise with vendors and global teams to resolve issues, manage dependencies, and ensure service reliability.</li>
+                        <li>Act as <strong>IT Service Owner</strong> for a key Cash Equities application, overseeing end-to-end production support governance, disaster-recovery exercises, audit readiness, vulnerability remediation, and incident management.</li>
+                        <li>Pioneered <strong>AI-native software development</strong> across the team: actively developing production features, automating codebase migrations, and creating reusable agent skills that accelerate delivery.</li>
+                    </ul>
                 </div>
-            </section>
+
+                <!-- Role 2 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div>
+                            <h3 class="exp-role-title">Senior Software Developer – Cash Equities Technology</h3>
+                            <div class="exp-company">HSBC Technology INDIA <span class="exp-company-sub">// OMS Architecture, Latency & Production Support</span></div>
+                        </div>
+                        <span class="exp-badge-date">Feb 2022 – Nov 2023</span>
+                    </div>
+
+                    <div class="exp-tags">
+                        <span class="exp-tag">Order Management Systems (OMS)</span>
+                        <span class="exp-tag">Market Connectivity & FIX</span>
+                        <span class="exp-tag">Production Support</span>
+                        <span class="exp-tag">Direct Broker Routing</span>
+                        <span class="exp-tag">Latency Reduction</span>
+                        <span class="exp-tag">Zero Downtime</span>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Provided high-stakes <strong>Production Support for Order Management Systems (OMS) and Market Connectivity</strong>, actively diagnosing and resolving live-market order flow anomalies, FIX drop copy/broker session disconnects, and conducting detailed incident RCAs.</li>
+                        <li>Reduced end-to-end latency and accelerated feature delivery by decoupling legacy OMS components and modernizing system architecture.</li>
+                        <li>Designed and implemented direct broker routing to bypass intermediate layers, cutting order-processing time and message hops.</li>
+                        <li>Led upgrades of critical OMS components with <strong>zero unplanned downtime</strong>, maintaining rock-solid production stability during volatile market sessions.</li>
+                        <li>Partnered closely with business stakeholders, vendors, and exchanges to deliver high-priority functionalities and troubleshoot critical production incidents.</li>
+                        <li>Conducted rigorous code reviews and contributed to engineering standards focused on reliability, maintainability, and high-throughput performance.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <div>
+                            <h3 class="exp-role-title">Software Developer – Cash Equities Technology</h3>
+                            <div class="exp-company">HSBC Technology INDIA <span class="exp-company-sub">// Trading Gateways, Market Connectivity & CI/CD</span></div>
+                        </div>
+                        <span class="exp-badge-date">Jul 2019 – Jan 2022</span>
+                    </div>
+
+                    <div class="exp-tags">
+                        <span class="exp-tag">FIX Protocol</span>
+                        <span class="exp-tag">Trading Gateways</span>
+                        <span class="exp-tag">Market Connectivity</span>
+                        <span class="exp-tag">CI/CD Jenkins</span>
+                        <span class="exp-tag">UNIX SA Contributor</span>
+                        <span class="exp-tag">Shell Scripting</span>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Led FIX Protocol onboarding and production connectivity for brokers and markets across EMEA and MENA regions, substantially expanding market connectivity and trading footprint.</li>
+                        <li>Enhanced trading gateway capabilities to meet stringent performance and reliability requirements under peak market volumes.</li>
+                        <li>Automated manual deployment tasks and re-engineered CI/CD pipelines, slashing release effort and operational errors.</li>
+                        <li>Contributed to the UNIX SA community with working knowledge of UNIX systems, increasing infrastructure autonomy and reducing dependency on centralized teams.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </div>
-    <!-- end section -->
 
-
-    <!-- begin section -->
-
+    <!-- ==========================================
+         Section 6: Technologies & Skills
+         ========================================== -->
     <div class="section skills" data-anchor="technologies">
-        <div class="content">
-            <h1 class="wow fadeInDown">Technologies I've Used :</h1>
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// TECH ARSENAL</span>
+                <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+                <p class="section-desc">Battle-tested tools and frameworks powering distributed financial systems and modern AI engineering.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="skills-filter-nav">
+                <button class="skill-filter-btn active" data-filter="all">All Tech</button>
+                <button class="skill-filter-btn" data-filter="backend">Backend & Messaging</button>
+                <button class="skill-filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                <button class="skill-filter-btn" data-filter="ai">AI-Led Engineering</button>
+                <button class="skill-filter-btn" data-filter="systems">Systems & Tools</button>
+            </div>
+
             <div class="skillcontainer">
-                <div class="skillsiknow" id="java">
+                <!-- Java -->
+                <div class="skillsiknow" data-category="backend systems">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                 alt="Java">
+                            <i class="devicon-java-plain colored devicon"></i>
+                            <span class="skill-name">Core Java</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Java</span>
+                            <span>Core Java</span>
+                            <small>Concurrency, Enterprise Backend & Low-Latency OMS</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="python">
+
+                <!-- Scala -->
+                <div class="skillsiknow" data-category="backend">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                 alt="Python">
-                        </div>
-                        <div class="flip-card-back">
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillsiknow" id="scala">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg"
-                                 alt="Scala">
+                            <i class="devicon-scala-plain colored devicon"></i>
+                            <span class="skill-name">Scala</span>
                         </div>
                         <div class="flip-card-back">
                             <span>Scala</span>
+                            <small>Functional & High-Throughput Services</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="shell">
+
+                <!-- Python -->
+                <div class="skillsiknow" data-category="backend ai">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-                                 alt="Shell Scripting"
-                                 style="background-color:rgba(255,255,255, 85%);border-radius:50%">
+                            <i class="devicon-python-plain colored devicon"></i>
+                            <span class="skill-name">Python</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Shell Scripting</span>
+                            <span>Python</span>
+                            <small>Automation, Agent Scripts, Data Tooling</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="fix-protocol">
+
+                <!-- Apache Kafka -->
+                <div class="skillsiknow" data-category="backend">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p style="color:white;font-weight:bold">FIX <br/>Protocol</p>
+                            <i class="devicon-apachekafka-original colored devicon"></i>
+                            <span class="skill-name">Apache Kafka</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Financial Information eXchange Protocol</span>
+                            <span>Apache Kafka</span>
+                            <small>Event-Driven Streaming & Partitioning</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="web-development">
+
+                <!-- Aeron -->
+                <div class="skillsiknow" data-category="backend">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                 alt="Web Development">
+                            <p style="color:#00f2fe;font-weight:800;font-size:1.4rem;margin:0;">AERON</p>
+                            <span class="skill-name">Aeron Messaging</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Web Development</span>
+                            <span>Aeron</span>
+                            <small>Ultra Low-Latency IPC & UDP Transport</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="ansible">
+
+                <!-- FIX Protocol -->
+                <div class="skillsiknow" data-category="backend">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
-                                 alt="Ansible">
+                            <p style="color:#ff5370;font-weight:800;font-size:1.3rem;margin:0;">FIX</p>
+                            <span class="skill-name">FIX Protocol</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Ansible</span>
+                            <span>FIX Protocol</span>
+                            <small>Order Routing & Market Gateways (EMEA/MENA)</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="cicd">
+
+                <!-- GCP -->
+                <div class="skillsiknow" data-category="cloud">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
-                                 alt="CI/CD Pipelines">
+                            <i class="devicon-googlecloud-plain colored devicon"></i>
+                            <span class="skill-name">Google Cloud</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>CI/CD Pipelines</span>
+                            <span>GCP</span>
+                            <small>Certified Cloud Architect Provisioning</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="linux">
+
+                <!-- Ansible -->
+                <div class="skillsiknow" data-category="cloud systems">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                                 alt="Linux">
+                            <i class="devicon-ansible-plain colored devicon"></i>
+                            <span class="skill-name">Ansible (IaC)</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Linux</span>
+                            <span>Ansible / IaC</span>
+                            <small>Infrastructure Configuration & Automation</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="windows">
+
+                <!-- Jenkins / CI/CD -->
+                <div class="skillsiknow" data-category="cloud">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
-                                 alt="Windows">
+                            <i class="devicon-jenkins-line colored devicon"></i>
+                            <span class="skill-name">CI/CD & Jenkins</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Windows</span>
+                            <span>CI/CD</span>
+                            <small>Automated Release Pipelines & Compliance</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="git">
+
+                <!-- Docker & Containers -->
+                <div class="skillsiknow" data-category="cloud systems">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                 alt="Git">
+                            <i class="devicon-docker-plain colored devicon"></i>
+                            <span class="skill-name">Docker / Podman</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Git</span>
+                            <span>Docker & Podman</span>
+                            <small>Containerized Packaging & Microservices</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="jira">
+
+                <!-- Linux / UNIX -->
+                <div class="skillsiknow" data-category="systems">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-                                 alt="Jira">
+                            <i class="devicon-linux-plain devicon"></i>
+                            <span class="skill-name">UNIX / Linux</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Jira</span>
+                            <span>UNIX / Linux</span>
+                            <small>Shell Scripting, Environment Navigation & SA Community Contributor</small>
                         </div>
                     </div>
                 </div>
-                <div class="skillsiknow" id="confluence">
+
+                <!-- OMS & Market Connectivity Production Support -->
+                <div class="skillsiknow" data-category="backend systems">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"
-                                 alt="Confluence">
+                            <i class="fa fa-life-ring" style="font-size:46px;color:#ff5370;margin-bottom:8px;"></i>
+                            <span class="skill-name">OMS & Market Support</span>
                         </div>
                         <div class="flip-card-back">
-                            <span>Confluence</span>
+                            <span>Prod Support</span>
+                            <small>OMS & Market Connectivity Support, Live Incident Triage, RCAs & DR Drills</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Driven Software Development -->
+                <div class="skillsiknow" data-category="ai">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa fa-code" style="font-size:46px;color:#10b981;margin-bottom:8px;"></i>
+                            <span class="skill-name">AI-Driven Dev</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <span>AI-Native Dev</span>
+                            <small>Active Software Engineering with Coding Agents: Feature Delivery & Refactoring</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="skillsiknow" data-category="systems">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="devicon-git-plain colored devicon"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <span>Git Version Control</span>
+                            <small>Trunk-based Dev & Monorepo Workflows</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL -->
+                <div class="skillsiknow" data-category="backend">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa fa-database" style="font-size:46px;color:#38bdf8;margin-bottom:8px;"></i>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <span>Relational DBs</span>
+                            <small>Query Optimization & Financial Schema Design</small>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- end section -->
 
-
-    <!-- begin section -->
-
-    <div class="section" data-anchor="projects">
-        <div class="content-slide">
-            <div class="slide">
-                <h1 class="wow fadeInDown" data-wow-delay="0.2s">MyCollegeBuddy</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">This website contains question paper for students of
-                    KIIT University.</p>
-                <iframe src="https://abhishekraha.github.io/MyCollegeBuddy/" width="100%" height="70%"
-                        data-wow-delay="0.2s">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
+    <!-- ==========================================
+         Section 7: Certifications & Recognition
+         ========================================== -->
+    <div class="section recognition-section" data-anchor="recognition">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// CREDENTIALS & HONORS</span>
+                <h2 class="section-title">Certifications & <span class="accent">Awards</span></h2>
+                <p class="section-desc">Industry-recognized cloud architecture, enterprise engineering, and banking excellence honors.</p>
             </div>
-            <div class="slide">
-                <h1>Chat Application</h1>
-                <p>NodeJS and Angular based Chat Application</p>
-                <div class="images-container">
-                    <img class="slide-image" src="./images/myCollegeBuddyImages/normalChat.png" alt="Image 1">
-                    <img class="slide-image" src="./images/myCollegeBuddyImages/listActiveUsers.png" alt="Image 2">
-                    <img class="slide-image" src="./images/myCollegeBuddyImages/newGroupChat.png" alt="Image 3">
-                    <img class="slide-image" src="./images/myCollegeBuddyImages/groupChatOptions.png" alt="Image 4">
+
+            <div class="recognition-grid">
+                <!-- Certifications Card -->
+                <div class="recognition-card">
+                    <div class="recog-header">
+                        <div class="recog-icon-box cyan">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <h3 class="recog-category-title">Certifications</h3>
+                    </div>
+                    <ul class="recog-list">
+                        <li class="recog-item">
+                            <span class="recog-item-title">Google Cloud Certified – Professional Cloud Architect</span>
+                            <span class="recog-item-sub">Google Cloud Platform | <span class="recog-year">2023</span></span>
+                        </li>
+                        <li class="recog-item">
+                            <span class="recog-item-title">Accredited Enterprise Engineer</span>
+                            <span class="recog-item-sub">Accredited by HSBC &bull; Strategic Technical Leadership, Enterprise Architecture & Governance | <span class="recog-year">2023</span></span>
+                        </li>
+                        <li class="recog-item">
+                            <span class="recog-item-title">Certified Ethical Hacker</span>
+                            <span class="recog-item-sub">Cryptus Cyber Security, Delhi | <span class="recog-year">2017</span></span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Manual controls as icons or custom buttons -->
-                <!-- <span class="nav-btn next-btn">&#10095;</span> -->
-                <!-- TODO: There is a bug in this button that it does not show up in the correct place. It's 11:05 right now, so I might re-visit it at some sensible hour-->
-            </div>
-            <div class="slide">
-                <h1>Simple REST Client</h1>
-                <p>A lightweight Java REST client for performing API calls</p>
-                <img src="./images/SimpleRESTClientImages/SimpleRestClient.png" alt="SimpleRESTClient">
+                <!-- Awards Card -->
+                <div class="recognition-card">
+                    <div class="recog-header">
+                        <div class="recog-icon-box amber">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <h3 class="recog-category-title">Awards & Honors</h3>
+                    </div>
+                    <ul class="recog-list">
+                        <li class="recog-item">
+                            <span class="recog-item-title">Pat on the Back Award</span>
+                            <span class="recog-item-sub">Codebase refactoring, maintainability, and IT Service Ownership governance | <span class="recog-year">2025</span></span>
+                        </li>
+                        <li class="recog-item">
+                            <span class="recog-item-title">Circle of Excellence Award</span>
+                            <span class="recog-item-sub">Automation improving production hygiene and cross-team communication | <span class="recog-year">2022</span></span>
+                        </li>
+                        <li class="recog-item">
+                            <span class="recog-item-title">Star Performer Award</span>
+                            <span class="recog-item-sub">CI/CD pipeline rewrite with improved security and compliance controls | <span class="recog-year">2021</span></span>
+                        </li>
+                        <li class="recog-item">
+                            <span class="recog-item-title">Pat on the Back Award</span>
+                            <span class="recog-item-sub">UAT ownership and monitoring automation | <span class="recog-year">2019</span></span>
+                        </li>
+                    </ul>
+                </div>
 
-                <!-- Manual controls as icons or custom buttons -->
-                <!-- <span class="nav-btn next-btn">&#10095;</span> -->
-                <!-- TODO: There is a bug in this button that it does not show up in the correct place. It's 11:05 right now, so I might re-visit it at some sensible hour-->
+                <!-- Education Card -->
+                <div class="recognition-card">
+                    <div class="recog-header">
+                        <div class="recog-icon-box">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="recog-category-title">Education</h3>
+                    </div>
+                    <ul class="recog-list">
+                        <li class="recog-item">
+                            <span class="recog-item-title">B.Tech, Information Technology</span>
+                            <span class="recog-item-sub">Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar</span>
+                            <span class="recog-item-sub"><span class="recog-year">2015 – 2019</span></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </div>
-    <!-- end section -->
 
-    <!-- begin section -->
-
+    <!-- ==========================================
+         Section 8: Contact / Connect
+         ========================================== -->
     <div class="section contactme" data-anchor="contact">
-        <div class="content wow fadeInDown" data-wow-delay="0.2s">
-            <h1>CONNECT WITH ME</h1>
-            <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-            <br>
-            <div class="social-links">
-            <span><a href="mailto:abhishekraha0001@gmail.com" target="_blank">
-              <i class="fa fa-envelope-o fa-5x"></i></a></span>
-                <span><a href="https://www.linkedin.com/in/abhishek-raha/" target="_blank">
-              <i class="fa fa-linkedin fa-5x"></i></a></span>
-                <span><a href="https://github.com/abhishekraha" target="_blank">
-              <i class="fa fa-github fa-5x"></i></a></span>
-                <span><a href="https://x.com/abhishek_raha_" target="_blank">
-              <i class="fa fa-twitter fa-5x"></i></a></span>
+        <div class="tech-container">
+            <div class="contact-card">
+                <div class="section-tag">// PING PROD</div>
+                <h1>CONNECT WITH ME</h1>
+                <p>Whether you want to discuss low-latency distributed systems, cloud migrations on GCP, AI-led developer workflows, or simply talk tech — let's connect!</p>
+
+                <div class="social-links">
+                    <a href="mailto:abhishekraha0001@gmail.com" class="social-btn" title="Email Abhishek">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-raha/" target="_blank" class="social-btn" title="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/abhishekraha" target="_blank" class="social-btn" title="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://x.com/abhishek_raha_" target="_blank" class="social-btn" title="X (Twitter)">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <span id="copy-email-btn" class="contact-quick-pill" title="Click to copy email">
+                        <i class="fa fa-clipboard"></i> abhishekraha0001@gmail.com (click to copy)
+                    </span>
+                </div>
+
+                <div class="footer-copy">
+                    &copy; 2026 Abhishek Raha &bull; Architected with Low-Latency & Clean Code &bull; Built for GitHub Pages
+                </div>
             </div>
         </div>
     </div>
-    <!-- end section -->
-
 
 </div>
-<!-- end fullpage -->
-<!-- partial -->
-<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+<!-- End Fullpage Container -->
+
+<!-- Vendor Scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+
+<!-- Custom App Script -->
 <script src="javascript/script.js"></script>
 
 </body>
-
 </html>
