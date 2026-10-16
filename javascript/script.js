@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
     // ==========================================
-    // 1. Hero Typewriter Effect (AI Lead Developer Focus)
+    // 1. Hero Typewriter Effect
     // ==========================================
     const keywords = [
-        "AI Lead Developer & Senior Backend Engineer",
-        "Primary Stack: Core Java & Python",
-        "Architecting Coding Agents & Autonomous Workflows",
-        "Accredited Enterprise Engineer (HSBC) — Leadership",
+        "Senior Backend Engineer (Core Java)",
+        "Enterprise Architecture & Distributed Systems",
+        "Practical AI-Assisted Software Development",
+        "Accredited Enterprise Engineer (HSBC)",
         "Google Cloud Certified Professional Cloud Architect",
-        "Active AI-Driven Software Engineering (Not Just Prompts!)",
-        "7+ Years Enterprise Backend Experience @ HSBC",
-        "I build things, break things, fix things, and lead with AI"
+        "Kafka & High-Throughput Messaging Architectures",
+        "7+ Years Mission-Critical Software @ HSBC",
+        "I build things, break things, fix things, and automate the rest"
     ];
     const holder = document.getElementById("holder");
 
@@ -124,12 +124,12 @@ $(document).ready(function () {
 
     const resumeData = {
         name: "Abhishek Raha",
-        title: "AI Lead Developer | Senior Backend Engineer (Java / Python)",
+        title: "Senior Backend Engineer | Java | AI-Assisted Development",
         accreditation: "Accredited Enterprise Engineer (HSBC)",
         certification: "Google Cloud Certified - Professional Cloud Architect",
         experience: "7+ years in enterprise software and financial technology (HSBC)",
-        focus: ["Active AI-Native Development", "Coding Agents & Workflows", "Java & Python", "GCP Cloud Architecture", "Technical Leadership"],
-        location: "India",
+        focus: ["Core Java & Distributed Systems", "Kafka & Messaging", "AI-Assisted Development", "GCP Cloud Architecture", "Technical Leadership"],
+        location: "Pune, India",
         contacts: {
             email: "abhishekraha0001@gmail.com",
             phone: "+91 9078802424",
