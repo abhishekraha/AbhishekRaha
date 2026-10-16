@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
     // ==========================================
-    // 1. Hero Typewriter Effect
+    // 1. Hero Typewriter Effect (AI Lead Developer Focus)
     // ==========================================
     const keywords = [
-        "Senior Backend Engineer @ HSBC Cash Equities",
-        "Low-Latency Trading Systems & OMS Architecture",
-        "Production Support for OMS & Market Connectivity",
-        "Accredited Enterprise Engineer (HSBC)",
+        "AI Lead Developer & Senior Backend Engineer",
+        "Primary Stack: Core Java & Python",
+        "Architecting Coding Agents & Autonomous Workflows",
+        "Accredited Enterprise Engineer (HSBC) — Leadership",
         "Google Cloud Certified Professional Cloud Architect",
-        "Active AI-Driven Software Engineering & Agent Workflows",
-        "Core Java • Scala • Aeron • Apache Kafka • FIX Protocol",
-        "I build things, break things, fix things, and engineer robust systems"
+        "Active AI-Driven Software Engineering (Not Just Prompts!)",
+        "7+ Years Enterprise Backend Experience @ HSBC",
+        "I build things, break things, fix things, and lead with AI"
     ];
     const holder = document.getElementById("holder");
 
@@ -124,10 +124,11 @@ $(document).ready(function () {
 
     const resumeData = {
         name: "Abhishek Raha",
-        title: "Senior Backend Engineer | Java | Low-Latency Systems | AI-Native Development",
-        accreditations: "Accredited Enterprise Engineer (HSBC)",
-        experience: "7+ years in mission-critical financial technology (HSBC Cash Equities)",
-        focus: ["Low-Latency Trading", "OMS Architecture", "Market Connectivity", "Production Support", "AI Coding Agents"],
+        title: "AI Lead Developer | Senior Backend Engineer (Java / Python)",
+        accreditation: "Accredited Enterprise Engineer (HSBC)",
+        certification: "Google Cloud Certified - Professional Cloud Architect",
+        experience: "7+ years in enterprise software and financial technology (HSBC)",
+        focus: ["Active AI-Native Development", "Coding Agents & Workflows", "Java & Python", "GCP Cloud Architecture", "Technical Leadership"],
         location: "India",
         contacts: {
             email: "abhishekraha0001@gmail.com",
@@ -137,11 +138,10 @@ $(document).ready(function () {
             website: "https://abhishekraha.github.io/AbhishekRaha/"
         },
         skills: {
-            languages: ["Core Java", "Scala", "Python", "SQL", "Shell Scripting", "Groovy"],
-            distributed: ["Apache Kafka", "Aeron", "FIX Protocol", "Trading Gateways", "OMS"],
-            production_support: ["OMS Support", "Market Connectivity", "Live Incident Triage", "Disaster Recovery", "RCAs"],
-            cloud_devops: ["GCP", "IaC (Ansible/Terraform)", "Docker", "Podman", "Jenkins CI/CD", "UNIX/Linux", "Git"],
-            ai_engineering: ["Hands-on Development with Coding Agents", "Feature Implementation", "Automated Testing", "Reusable Skills"]
+            ai_engineering: ["Coding-Agent Workflows", "Subagents & Skills", "Feature Engineering", "Automated Testing", "Codebase Refactoring", "Output Validation"],
+            languages: ["Java", "Python", "Scala", "SQL", "Shell Scripting", "Groovy"],
+            cloud_devops: ["Google Cloud Platform (GCP)", "Infrastructure as Code (Ansible)", "Docker", "Podman", "Jenkins CI/CD", "UNIX/Linux", "Git"],
+            enterprise_systems: ["Distributed Architecture", "Event-Driven Messaging (Kafka, Aeron)", "APIs & Gateways", "OMS (Historical)", "IT Service Ownership"]
         },
         certifications: [
             "Accredited Enterprise Engineer - HSBC (2023)",
@@ -160,7 +160,7 @@ $(document).ready(function () {
         const line = document.createElement("div");
         line.className = "terminal-line";
         if (isCommand) {
-            line.innerHTML = `<span class="term-cyan">abhishek@fintech-gw:~$</span> <span class="term-bold">${escapeHtml(text)}</span>`;
+            line.innerHTML = `<span class="term-cyan">abhishek@ai-lead:~$</span> <span class="term-bold">${escapeHtml(text)}</span>`;
         } else {
             line.innerHTML = text;
         }
@@ -198,13 +198,12 @@ $(document).ready(function () {
             case "help":
                 appendTerminalOutput(`
 <span class="term-yellow">Available Commands:</span>
-  <span class="term-cyan">summary</span>      - Display professional background & engineering summary
-  <span class="term-cyan">stack</span>        - List backend, low-latency, and cloud tech stack
-  <span class="term-cyan">support</span>      - View Production Support for OMS & Market Connectivity
-  <span class="term-cyan">metrics</span>      - Show selected achievements and performance impact
-  <span class="term-cyan">experience</span>   - View detailed HSBC career progression
-  <span class="term-cyan">ai</span>           - Learn about hands-on software development using AI
-  <span class="term-cyan">certs</span>        - Show HSBC Enterprise Engineer, GCP Cloud Architect credentials
+  <span class="term-cyan">summary</span>      - Display AI Lead Developer profile & engineering background
+  <span class="term-cyan">ai</span>           - Learn about active software development using AI coding agents
+  <span class="term-cyan">stack</span>        - List primary languages (Java, Python) and cloud stack
+  <span class="term-cyan">metrics</span>      - Show achievements and team force-multiplier impact
+  <span class="term-cyan">experience</span>   - View leadership & HSBC career progression
+  <span class="term-cyan">certs</span>        - Show HSBC Enterprise Engineer accreditation & GCP Architect cert
   <span class="term-cyan">awards</span>       - View HSBC recognition & awards
   <span class="term-cyan">cat resume.json</span> - Dump full profile as formatted JSON
   <span class="term-cyan">contact</span>      - Get email, LinkedIn, and GitHub links
@@ -215,35 +214,36 @@ $(document).ready(function () {
 
             case "summary":
                 appendTerminalOutput(`
-<span class="term-bold">ABHISHEK RAHA</span> | <span class="term-green">Senior Backend Engineer & HSBC Accredited Enterprise Engineer</span>
-• 7+ years of experience building, scaling, and operating mission-critical financial software at HSBC Cash Equities.
-• Strong Core Java background across low-latency trading systems, OMS components, gateways, FIX connectivity, and event-driven messaging with Kafka and Aeron.
-• Extensive experience in <span class="term-cyan">Production Support for OMS and Market Connectivity</span>, live trading triage, and DR governance.
-• Hands-on <span class="term-green">AI-Native Software Development</span>: actively engineering features, automated tests, and multi-file refactoring using coding agents.
-• IT Service Owner overseeing disaster recovery, audit compliance, and Google Cloud provisioning via IaC.
+<span class="term-bold">ABHISHEK RAHA</span> | <span class="term-green">AI Lead Developer & HSBC Accredited Enterprise Engineer</span>
+• 7+ years of experience leading teams and building enterprise software at HSBC.
+• Primary development stacks: <span class="term-yellow">Core Java & Python</span>.
+• Deep expertise in <span class="term-green">active AI-native software development</span>: building coding-agent workflows, subagents, and reusable skills that accelerate feature delivery and testing.
+• <span class="term-cyan">HSBC Accredited Enterprise Engineer (2023)</span> recognized for strategic technical leadership, enterprise architecture standards, and code governance.
+• Certified <span class="term-cyan">Google Cloud Professional Cloud Architect (2023)</span> with hands-on IaC provisioning.
+• Foundational background in enterprise distributed systems, Kafka event streaming, and financial technology.
+`);
+                break;
+
+            case "ai":
+            case "ai-leadership":
+                appendTerminalOutput(`
+<span class="term-green">🤖 ACTIVE AI-DRIVEN SOFTWARE ENGINEERING & LEADERSHIP:</span>
+  • <span class="term-bold">Beyond Prompting:</span> Hands-on software development using autonomous coding agents across the entire lifecycle.
+  • <span class="term-cyan">Feature Implementation:</span> Driving multi-file feature delivery and complex codebase refactoring with agentic pairs.
+  • <span class="term-yellow">Automated Verification:</span> Synthesizing automated test suites, regression checks, and rigorous verification of AI-generated code.
+  • <span class="term-coral">Reusable Skills & Workflows:</span> Authoring domain-specific skills, subagents, and deterministic pipelines that eliminate engineering toil across teams.
 `);
                 break;
 
             case "stack":
             case "skills":
                 appendTerminalOutput(`
-<span class="term-yellow">CORE TECH STACK:</span>
-  <span class="term-coral">[Backend & Distributed]</span> : Core Java, Scala, Python, SQL, Kafka, Aeron, FIX Protocol, OMS, Trading Gateways
-  <span class="term-cyan">[Production Support]</span>    : OMS & Market Connectivity Support, Live Incident Triage, Exchange Feeds, RCAs, DR
-  <span class="term-cyan">[Cloud & DevOps]</span>        : Google Cloud Platform (GCP), IaC (Ansible), Jenkins CI/CD, Docker, Podman, Git
-  <span class="term-green">[AI-Driven Dev]</span>         : Full-Cycle Feature Engineering with Coding Agents, Test Generation, Refactoring
-  <span class="term-yellow">[Systems & UNIX]</span>        : Working knowledge of UNIX / Linux environments, Shell Scripting, SA Contributor
-`);
-                break;
-
-            case "support":
-            case "prod-support":
-                appendTerminalOutput(`
-<span class="term-coral">🚨 PRODUCTION SUPPORT & MARKET CONNECTIVITY:</span>
-  • Frontline Production Support for high-volume Order Management Systems (OMS) and FIX trading gateways.
-  • Real-time triage of live order-flow anomalies, session drops, and market-data connectivity across EMEA & MENA.
-  • Lead post-incident Root Cause Analyses (RCAs) and implement permanent preventative architectural fixes.
-  • IT Service Owner leading disaster-recovery (DR) drills, failover testing, and vulnerability remediation.
+<span class="term-yellow">PRIMARY TECH STACK:</span>
+  <span class="term-green">[Primary Languages]</span>  : Core Java, Python, Scala, SQL, Shell Scripting, Groovy
+  <span class="term-coral">[AI-Led Engineering]</span> : Coding Agents, Agentic Workflows, Reusable Skills, Automated Test Synthesis
+  <span class="term-cyan">[Cloud & DevOps]</span>     : Google Cloud Platform (GCP), Infrastructure as Code (Ansible), Docker, Podman, Jenkins, Git
+  <span class="term-yellow">[Enterprise Systems]</span> : Distributed Architecture, Apache Kafka, APIs, IT Service Ownership
+  <span class="term-dim">[Historical Focus]</span>   : Order Management Systems (OMS), Market Connectivity, FIX Gateways
 `);
                 break;
 
@@ -251,11 +251,11 @@ $(document).ready(function () {
             case "achievements":
                 appendTerminalOutput(`
 <span class="term-green">⚡ SELECTED ACHIEVEMENTS & IMPACT:</span>
-  1. <span class="term-cyan">5-6 min</span> processing speedup via targeted application refactoring & performance engineering in low-latency trading.
-  2. <span class="term-cyan">90%</span> reduction in privileged production access by automating release pipelines and governance.
-  3. <span class="term-cyan">95%</span> IT compliance adherence achieved via custom release-metrics and policy-breach monitoring.
-  4. <span class="term-cyan">0 Downtime</span> achieved across critical OMS component upgrades and direct broker routing migrations.
-  5. Pioneered active AI-native software development and reusable agent workflows adopted by engineering peers.
+  1. <span class="term-cyan">AI Team Force Multiplier:</span> Created reusable AI skills, agents, and developer workflows that eliminated repetitive engineering effort and accelerated team delivery.
+  2. <span class="term-cyan">5-6 min</span> processing speedup via targeted application refactoring in enterprise Cash Equities trading systems.
+  3. <span class="term-cyan">90%</span> reduction in privileged production access by automating release processes and governance.
+  4. <span class="term-cyan">95%</span> IT compliance adherence achieved via custom release-metrics and policy-breach monitoring.
+  5. <span class="term-cyan">Zero Downtime</span> achieved across critical component upgrades and routing migrations.
 `);
                 break;
 
@@ -263,19 +263,19 @@ $(document).ready(function () {
             case "work":
                 appendTerminalOutput(`
 <span class="term-yellow">PROFESSIONAL CAREER (HSBC Technology):</span>
-  • <span class="term-green">Consultant Specialist</span> [Nov 2023 - Present]
-    - Lead 3 engineers through legacy vendor migration to strategic Cash Equities solution.
+  • <span class="term-green">Consultant Specialist – Cash Equities Technology</span> [Nov 2023 - Present]
+    - Lead a team of 3 engineers through strategic migration to modern bank infrastructure.
     - Provisioned Google Cloud environments using Infrastructure as Code (IaC).
-    - IT Service Owner for mission-critical trading application (DR, audit, security governance).
-    - Championed active AI-driven software development across feature delivery and migrations.
+    - Championed active AI-native software development across feature delivery, refactoring, and agent skills.
+    - Act as IT Service Owner for mission-critical trading application (DR, audit, governance).
 
-  • <span class="term-green">Senior Software Developer</span> [Feb 2022 - Nov 2023]
-    - Delivered frontline Production Support for OMS and Market Connectivity during live market sessions.
-    - Decoupled legacy OMS components, slashing latency and accelerating feature delivery.
-    - Implemented direct broker routing bypassing intermediary hops.
-    - Upgraded key OMS components with zero unplanned downtime.
+  • <span class="term-green">Senior Software Developer – Cash Equities Technology</span> [Feb 2022 - Nov 2023]
+    - Decoupled legacy OMS components, accelerating delivery and modernizing architecture.
+    - Implemented direct broker routing bypassing intermediate hops.
+    - Provided frontline Production Support for OMS and market connectivity during active trading hours.
+    - Upgraded key components with zero unplanned downtime.
 
-  • <span class="term-green">Software Developer</span> [Jul 2019 - Jan 2022]
+  • <span class="term-green">Software Developer – Cash Equities Technology</span> [Jul 2019 - Jan 2022]
     - Led FIX Protocol broker/market onboarding across EMEA & MENA.
     - Re-architected CI/CD pipelines and contributed to UNIX SA community.
 `);
@@ -284,11 +284,11 @@ $(document).ready(function () {
             case "certs":
             case "certifications":
                 appendTerminalOutput(`
-<span class="term-yellow">CERTIFICATIONS & CREDENTIALS:</span>
+<span class="term-yellow">CERTIFICATIONS & ACCREDITATIONS:</span>
   • <span class="term-green">Accredited Enterprise Engineer</span> - HSBC (2023)
-    <span class="term-dim">→ Focused on strategic technical leadership, enterprise architecture standards & operational governance.</span>
+    <span class="term-dim">→ Strategic technical leadership, enterprise architecture standards & code governance.</span>
   • <span class="term-cyan">Google Cloud Certified</span> - Professional Cloud Architect (2023)
-  • <span class="term-cyan">Certified Ethical Hacker</span> - Cryptus Cyber Security (2017)
+  • <span class="term-cyan">Certified Ethical Hacker (CEH)</span> - Cryptus Cyber Security (2017)
   • <span class="term-cyan">B.Tech, Information Technology</span> - KIIT Bhubaneswar (2015-2019)
 `);
                 break;
@@ -297,19 +297,9 @@ $(document).ready(function () {
                 appendTerminalOutput(`
 <span class="term-yellow">HONORS & AWARDS:</span>
   🏆 <span class="term-green">Pat on the Back Award (2025)</span> - Codebase refactoring & IT Service Ownership governance
-  🏆 <span class="term-green">Circle of Excellence Award (2022)</span> - Production hygiene & cross-team automation
-  🏆 <span class="term-green">Star Performer Award (2021)</span> - CI/CD pipeline rewrite & compliance controls
+  🏆 <span class="term-green">Circle of Excellence Award (2022)</span> - Automation improving production hygiene and cross-team communication
+  🏆 <span class="term-green">Star Performer Award (2021)</span> - CI/CD pipeline rewrite with improved security and compliance controls
   🏆 <span class="term-green">Pat on the Back Award (2019)</span> - UAT ownership & monitoring automation
-`);
-                break;
-
-            case "ai":
-                appendTerminalOutput(`
-<span class="term-green">🤖 ACTIVE AI-DRIVEN SOFTWARE DEVELOPMENT:</span>
-  • Not just prompt iteration: actively writing code, building features, and refactoring with AI coding agents.
-  • Integrating autonomous agents into the day-to-day loop for end-to-end implementation and automated test synthesis.
-  • Rigorous benchmarking and verification of AI-generated components against low-latency & strict banking compliance standards.
-  • Building custom domain skills and reusable subagent workflows to eliminate repetitive engineering toil.
 `);
                 break;
 
@@ -328,7 +318,7 @@ $(document).ready(function () {
                 break;
 
             case "whoami":
-                appendTerminalOutput(`<span class="term-cyan">guest@fintech-edge</span> (authorized visitor, TLS v1.3 encrypted)`);
+                appendTerminalOutput(`<span class="term-cyan">visitor@ai-lead-edge</span> (authorized visitor, TLS v1.3 encrypted)`);
                 break;
 
             case "clear":

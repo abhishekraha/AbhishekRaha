@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Raha - Resume | AI Lead Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #0284c7;
+            --accent-dark: #0369a1;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --border: #cbd5e1;
+            --border-light: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-main);
+            background-color: #f1f5f9;
+            line-height: 1.4;
+            font-size: 12px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Action Bar (hidden when printing) */
+        .top-action-bar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .top-action-bar a, .top-action-bar button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 12.5px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-print {
+            background: #0284c7;
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-print:hover {
+            background: #0369a1;
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Resume Document Container */
+        .resume-page {
+            max-width: 820px;
+            margin: 24px auto;
+            background: #ffffff;
+            padding: 36px 44px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Header */
+        .resume-header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 12px;
+            margin-bottom: 14px;
+        }
+
+        .candidate-name {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .candidate-title {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            margin-bottom: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 11.8px;
+            color: var(--text-muted);
+        }
+
+        .contact-row a {
+            color: var(--text-muted);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .contact-row a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        .section-block {
+            margin-bottom: 13px;
+        }
+
+        .section-heading {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1.5px solid var(--border);
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        /* Professional Summary */
+        .summary-text {
+            color: var(--text-main);
+            font-size: 11.8px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* Skills Grid */
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 11.8px;
+        }
+
+        .skill-group {
+            line-height: 1.42;
+        }
+
+        .skill-group strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Achievements Highlights */
+        .achievements-box {
+            background: #f8fafc;
+            border-left: 3.5px solid var(--accent);
+            padding: 8px 12px;
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 12px;
+        }
+
+        .achievements-box ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .achievements-box li {
+            position: relative;
+            padding-left: 16px;
+            font-size: 11.6px;
+            line-height: 1.4;
+            color: var(--text-main);
+        }
+
+        .achievements-box li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 10px;
+        }
+
+        /* Experience Items */
+        .job-item {
+            margin-bottom: 12px;
+        }
+
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-role {
+            font-size: 12.8px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .job-dates {
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--accent-dark);
+            white-space: nowrap;
+        }
+
+        .job-company {
+            font-size: 11.8px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .job-bullets {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .job-bullets li {
+            position: relative;
+            padding-left: 14px;
+            font-size: 11.6px;
+            line-height: 1.45;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .job-bullets li::before {
+            content: '•';
+            position: absolute;
+            left: 2px;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        /* Accreditations & Certifications */
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .badge-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 11.6px;
+        }
+
+        .badge-list li {
+            position: relative;
+            padding-left: 14px;
+            line-height: 1.4;
+        }
+
+        .badge-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+            font-weight: 700;
+            font-size: 11px;
+        }
+
+        .award-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 11.4px;
+        }
+
+        .award-list li {
+            position: relative;
+            padding-left: 16px;
+            line-height: 1.35;
+        }
+
+        .award-list li::before {
+            content: '🏆';
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 9px;
+        }
+
+        /* Print Specific Rules */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+                font-size: 11.2px !important;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .resume-page {
+                box-shadow: none !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: inherit !important;
+            }
+
+            .achievements-box {
+                background: #f8fafc !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .job-item {
+                page-break-inside: avoid;
+            }
+
+            .section-block {
+                margin-bottom: 10px;
+            }
+
+            @page {
+                size: letter;
+                margin: 0.38in 0.42in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Action Bar -->
+    <div class="top-action-bar no-print">
+        <a href="index.html" class="btn-back">
+            <i class="fa fa-arrow-left"></i> Back to Website
+        </a>
+        <div style="font-size: 13px; font-weight: 600; color: #94a3b8;">
+            ATS-Optimized &bull; Strictly 2 Pages Print Ready (Ctrl+P / Save as PDF)
+        </div>
+        <div style="display: flex; gap: 8px;">
+            <a href="Abhishek_Raha_Resume.docx" class="btn-back" style="background:#16a34a; border-color:#16a34a;" download>
+                <i class="fa fa-file-word-o"></i> Download Word (.docx)
+            </a>
+            <button onclick="window.print()" class="btn-print">
+                <i class="fa fa-print"></i> Print / Save PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- Resume Document -->
+    <div class="resume-page">
+        <!-- Header -->
+        <header class="resume-header">
+            <h1 class="candidate-name">Abhishek Raha</h1>
+            <div class="candidate-title">AI Lead Developer | Senior Backend Engineer (Java / Python)</div>
+            <div class="contact-row">
+                <span><i class="fa fa-phone"></i> +91 9078802424</span>
+                <a href="mailto:abhishekraha0001@gmail.com"><i class="fa fa-envelope"></i> abhishekraha0001@gmail.com</a>
+                <a href="https://linkedin.com/in/abhishek-raha" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin.com/in/abhishek-raha</a>
+                <a href="https://github.com/abhishekraha" target="_blank"><i class="fa fa-github"></i> github.com/abhishekraha</a>
+                <a href="https://abhishekraha.github.io/AbhishekRaha/" target="_blank"><i class="fa fa-globe"></i> abhishekraha.github.io/AbhishekRaha</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section-block">
+            <h2 class="section-heading">Professional Summary</h2>
+            <p class="summary-text">
+                AI Lead Developer and Senior Backend Engineer with <strong>7+ years of experience</strong> architecting enterprise systems and leading practical AI-driven software development at HSBC. Strong proficiency across <strong>Core Java and Python</strong>, with deep hands-on expertise in coding-agent workflows, reusable agent skills, prompt iteration, automated test synthesis, and validation of AI-generated outputs. Certified <strong>HSBC Accredited Enterprise Engineer</strong> (strategic technical leadership & architecture governance) and <strong>Google Cloud Certified Professional Cloud Architect</strong>. Experienced in leading engineering teams, cloud environment provisioning (IaC), and modernizing legacy platforms, with a strong foundational background in distributed systems and mission-critical financial applications.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section-block">
+            <h2 class="section-heading">Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-group">
+                    <strong>AI-Led Engineering & Coding Agents:</strong> Coding-Agent Workflows, Subagent Orchestration, Reusable Domain Skills, Hands-On AI Feature Development, Automated Test Synthesis, Codebase Refactoring, Prompt Iteration & Output Validation.
+                </div>
+                <div class="skill-group">
+                    <strong>Primary Languages:</strong> Core Java, Python, Scala, SQL, Shell Scripting, Groovy.
+                </div>
+                <div class="skill-group">
+                    <strong>Cloud, DevOps & Systems:</strong> Google Cloud Platform (GCP), Infrastructure as Code (IaC), Ansible, Jenkins CI/CD, Docker, Podman, Working knowledge of UNIX / Linux environments, Shell Scripting, Git.
+                </div>
+                <div class="skill-group">
+                    <strong>Enterprise Backend & Distributed Systems:</strong> Enterprise Backend Architecture, Event-Driven Messaging (Apache Kafka, Aeron), APIs & Gateways, Order Management Systems (OMS - historical), IT Service Ownership.
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Achievements -->
+        <section class="section-block">
+            <h2 class="section-heading">Selected Achievements & Impact</h2>
+            <div class="achievements-box">
+                <ul>
+                    <li><strong>AI Team Force Multiplier:</strong> Pioneered active AI-native development workflows, subagents, and reusable skills adopted across engineering teams, eliminating repetitive engineering effort and accelerating delivery cycles.</li>
+                    <li><strong>Processing Efficiency:</strong> Improved processing efficiency by <strong>5–6 minutes</strong> through targeted application refactoring and performance engineering in an enterprise Cash Equities trading platform.</li>
+                    <li><strong>Security & Access Governance:</strong> Reduced privileged production access by <strong>90%</strong> by automating release processes and pipeline controls, strengthening operational hygiene and audit readiness.</li>
+                    <li><strong>IT Compliance Tooling:</strong> Achieved <strong>95%</strong> compliance adherence by developing an automated release-metrics and policy-breach monitoring tool, subsequently scaled across multiple global asset classes.</li>
+                    <li><strong>High-Availability Upgrades:</strong> Led critical component decoupling and direct broker routing deployments with <strong>zero unplanned downtime</strong> during live enterprise operations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section-block">
+            <h2 class="section-heading">Professional Experience</h2>
+
+            <!-- Job 1 -->
+            <article class="job-item">
+                <div class="job-header">
+                    <span class="job-role">Consultant Specialist – Cash Equities Technology</span>
+                    <span class="job-dates">Nov 2023 – Present</span>
+                </div>
+                <div class="job-company">HSBC Technology INDIA | Pune, India</div>
+                <ul class="job-bullets">
+                    <li>Lead a team of 3 engineers through strategic migration from a legacy vendor platform to modern bank infrastructure, driving architectural design, technical direction, and hands-on code reviews.</li>
+                    <li>Championed <strong>active AI-native software development</strong> across the team: actively developing production features, automating codebase migrations, and creating reusable agent skills that accelerate delivery cycles.</li>
+                    <li>Designed and implemented Infrastructure as Code (IaC) to provision and configure Google Cloud Platform (GCP) environments for third-party vendor software, ensuring repeatable, automated, and maintainable deployments.</li>
+                    <li>Partner with external software vendors and internal risk, operations, and engineering teams to onboard products into HSBC's secure enterprise ecosystem.</li>
+                    <li>Act as <strong>IT Service Owner</strong> for a mission-critical Cash Equities application, overseeing end-to-end production support governance, disaster-recovery drills, vulnerability remediation, and regulatory audit compliance.</li>
+                </ul>
+            </article>
+
+            <!-- Job 2 -->
+            <article class="job-item">
+                <div class="job-header">
+                    <span class="job-role">Senior Software Developer – Cash Equities Technology</span>
+                    <span class="job-dates">Feb 2022 – Nov 2023</span>
+                </div>
+                <div class="job-company">HSBC Technology INDIA | Pune, India</div>
+                <ul class="job-bullets">
+                    <li>Decoupled legacy Order Management System (OMS) components and modernized messaging pathways, accelerating feature delivery and improving system architecture.</li>
+                    <li>Designed and implemented direct broker routing to bypass intermediate processing hops, substantially cutting round-trip order-processing time.</li>
+                    <li>Orchestrated major version upgrades of critical components with <strong>zero unplanned downtime</strong>, maintaining continuous enterprise stability.</li>
+                    <li>Provided frontline Production Support for Order Management Systems and market connectivity, diagnosing live-market order-flow anomalies and conducting detailed RCAs.</li>
+                    <li>Collaborated directly with traders, business stakeholders, and global exchange venues to resolve high-impact production incidents and release high-priority features.</li>
+                </ul>
+            </article>
+
+            <!-- Job 3 -->
+            <article class="job-item">
+                <div class="job-header">
+                    <span class="job-role">Software Developer – Cash Equities Technology</span>
+                    <span class="job-dates">Jul 2019 – Jan 2022</span>
+                </div>
+                <div class="job-company">HSBC Technology INDIA | Pune, India</div>
+                <ul class="job-bullets">
+                    <li>Spearheaded FIX Protocol onboarding and production connectivity for brokers and exchange venues across EMEA and MENA regions, significantly expanding trading market reach.</li>
+                    <li>Enhanced trading gateway capabilities and connection pools to support high-frequency message throughput and fault tolerance under peak volumes.</li>
+                    <li>Automated manual deployment tasks and re-architected Jenkins CI/CD pipelines, slashing release turnaround and eliminating operational errors.</li>
+                    <li>Contributed to the internal UNIX SA community with working knowledge of UNIX systems, increasing self-sufficiency for host administration and troubleshooting.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Certifications, Leadership & Accreditations -->
+        <section class="section-block">
+            <div class="two-col-grid">
+                <div>
+                    <h2 class="section-heading">Certifications & Accreditations</h2>
+                    <ul class="badge-list">
+                        <li><strong>Accredited Enterprise Engineer</strong> – HSBC (2023)<br>
+                            <span style="font-size: 11px; color: var(--text-light);">Recognized for strategic technical leadership, enterprise architecture standards, and code governance.</span>
+                        </li>
+                        <li><strong>Google Cloud Certified – Professional Cloud Architect</strong> (2023)</li>
+                        <li><strong>Certified Ethical Hacker (CEH)</strong> – Cryptus Cyber Security (2017)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="section-heading">Honors & Awards</h2>
+                    <ul class="award-list">
+                        <li><strong>Pat on the Back Award (2025):</strong> Codebase refactoring, maintainability, and IT Service Ownership governance.</li>
+                        <li><strong>Circle of Excellence Award (2022):</strong> Automation improving production hygiene and cross-team communication.</li>
+                        <li><strong>Star Performer Award (2021):</strong> CI/CD pipeline rewrite with improved security and compliance controls.</li>
+                        <li><strong>Pat on the Back Award (2019):</strong> UAT ownership and monitoring automation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section-block" style="margin-bottom: 0;">
+            <h2 class="section-heading">Education</h2>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <div>
+                    <strong style="color: var(--primary); font-size: 12.5px;">Bachelor of Technology (B.Tech) in Information Technology</strong><br>
+                    <span style="color: var(--text-muted); font-size: 11.5px;">Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar</span>
+                </div>
+                <span style="font-size: 11.5px; font-weight: 600; color: var(--accent-dark);">2015 – 2019</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
