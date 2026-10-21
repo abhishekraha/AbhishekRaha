@@ -160,7 +160,7 @@ $(document).ready(function () {
         const line = document.createElement("div");
         line.className = "terminal-line";
         if (isCommand) {
-            line.innerHTML = `<span class="term-cyan">abhishek@ai-lead:~$</span> <span class="term-bold">${escapeHtml(text)}</span>`;
+            line.innerHTML = `<span class="term-cyan">abhishek@backend-dev:~$</span> <span class="term-bold">${escapeHtml(text)}</span>`;
         } else {
             line.innerHTML = text;
         }
@@ -198,11 +198,11 @@ $(document).ready(function () {
             case "help":
                 appendTerminalOutput(`
 <span class="term-yellow">Available Commands:</span>
-  <span class="term-cyan">summary</span>      - Display AI Lead Developer profile & engineering background
-  <span class="term-cyan">ai</span>           - Learn about active software development using AI coding agents
+  <span class="term-cyan">summary</span>      - Display Senior Backend Engineer profile & background
+  <span class="term-cyan">ai</span>           - Learn about how I use AI coding agents in development
   <span class="term-cyan">stack</span>        - List primary languages (Java, Python) and cloud stack
-  <span class="term-cyan">metrics</span>      - Show achievements and team force-multiplier impact
-  <span class="term-cyan">experience</span>   - View leadership & HSBC career progression
+  <span class="term-cyan">metrics</span>      - Show engineering achievements and impact
+  <span class="term-cyan">experience</span>   - View HSBC engineering career progression
   <span class="term-cyan">certs</span>        - Show HSBC Enterprise Engineer accreditation & GCP Architect cert
   <span class="term-cyan">awards</span>       - View HSBC recognition & awards
   <span class="term-cyan">cat resume.json</span> - Dump full profile as formatted JSON
@@ -214,24 +214,26 @@ $(document).ready(function () {
 
             case "summary":
                 appendTerminalOutput(`
-<span class="term-bold">ABHISHEK RAHA</span> | <span class="term-green">AI Lead Developer & HSBC Accredited Enterprise Engineer</span>
-• 7+ years of experience leading teams and building enterprise software at HSBC.
+<span class="term-bold">ABHISHEK RAHA</span> | <span class="term-green">Senior Backend Engineer | AI-Assisted Development</span>
+• 7+ years of experience building mission-critical enterprise software at HSBC.
 • Primary development stacks: <span class="term-yellow">Core Java & Python</span>.
-• Deep expertise in <span class="term-green">active AI-native software development</span>: building coding-agent workflows, subagents, and reusable skills that accelerate feature delivery and testing.
-• <span class="term-cyan">HSBC Accredited Enterprise Engineer (2023)</span> recognized for strategic technical leadership, enterprise architecture standards, and code governance.
+• Daily use of <span class="term-green">AI-assisted software development</span>: leveraging coding agents, subagents, and reusable workflows to accelerate feature delivery, test automation, and refactoring.
+• <span class="term-cyan">HSBC Accredited Enterprise Engineer (2023)</span> recognized for enterprise architecture standards, code governance, and technical leadership.
 • Certified <span class="term-cyan">Google Cloud Professional Cloud Architect (2023)</span> with hands-on IaC provisioning.
 • Foundational background in enterprise distributed systems, Kafka event streaming, and financial technology.
 `);
                 break;
 
             case "ai":
+            case "ai-dev":
+            case "ai-workflows":
             case "ai-leadership":
                 appendTerminalOutput(`
-<span class="term-green">🤖 ACTIVE AI-DRIVEN SOFTWARE ENGINEERING & LEADERSHIP:</span>
-  • <span class="term-bold">Beyond Prompting:</span> Hands-on software development using autonomous coding agents across the entire lifecycle.
-  • <span class="term-cyan">Feature Implementation:</span> Driving multi-file feature delivery and complex codebase refactoring with agentic pairs.
-  • <span class="term-yellow">Automated Verification:</span> Synthesizing automated test suites, regression checks, and rigorous verification of AI-generated code.
-  • <span class="term-coral">Reusable Skills & Workflows:</span> Authoring domain-specific skills, subagents, and deterministic pipelines that eliminate engineering toil across teams.
+<span class="term-green">🤖 HOW I USE AI IN SOFTWARE DEVELOPMENT:</span>
+  • <span class="term-bold">AI-Assisted Coding:</span> Hands-on software development using AI coding agents across the entire lifecycle.
+  • <span class="term-cyan">Feature Implementation:</span> Accelerating multi-file feature delivery, legacy migration, and complex refactoring with agentic pairs.
+  • <span class="term-yellow">Automated Verification:</span> Synthesizing automated test suites, regression checks, and rigorous verification of generated code.
+  • <span class="term-coral">Reusable Skills & Workflows:</span> Authoring domain-specific skills, subagents, and deterministic pipelines to eliminate engineering toil.
 `);
                 break;
 
@@ -240,7 +242,7 @@ $(document).ready(function () {
                 appendTerminalOutput(`
 <span class="term-yellow">PRIMARY TECH STACK:</span>
   <span class="term-green">[Primary Languages]</span>  : Core Java, Python, Scala, SQL, Shell Scripting, Groovy
-  <span class="term-coral">[AI-Led Engineering]</span> : Coding Agents, Agentic Workflows, Reusable Skills, Automated Test Synthesis
+  <span class="term-coral">[AI-Assisted Dev]</span>    : Coding Agents, Agentic Workflows, Reusable Skills, Automated Test Synthesis
   <span class="term-cyan">[Cloud & DevOps]</span>     : Google Cloud Platform (GCP), Infrastructure as Code (Ansible), Docker, Podman, Jenkins, Git
   <span class="term-yellow">[Enterprise Systems]</span> : Distributed Architecture, Apache Kafka, APIs, IT Service Ownership
   <span class="term-dim">[Historical Focus]</span>   : Order Management Systems (OMS), Market Connectivity, FIX Gateways
@@ -251,7 +253,7 @@ $(document).ready(function () {
             case "achievements":
                 appendTerminalOutput(`
 <span class="term-green">⚡ SELECTED ACHIEVEMENTS & IMPACT:</span>
-  1. <span class="term-cyan">AI Team Force Multiplier:</span> Created reusable AI skills, agents, and developer workflows that eliminated repetitive engineering effort and accelerated team delivery.
+  1. <span class="term-cyan">AI-Assisted Velocity:</span> Created reusable AI skills, agent workflows, and automation that eliminated routine engineering effort and accelerated delivery.
   2. <span class="term-cyan">5-6 min</span> processing speedup via targeted application refactoring in enterprise Cash Equities trading systems.
   3. <span class="term-cyan">90%</span> reduction in privileged production access by automating release processes and governance.
   4. <span class="term-cyan">95%</span> IT compliance adherence achieved via custom release-metrics and policy-breach monitoring.
@@ -318,7 +320,7 @@ $(document).ready(function () {
                 break;
 
             case "whoami":
-                appendTerminalOutput(`<span class="term-cyan">visitor@ai-lead-edge</span> (authorized visitor, TLS v1.3 encrypted)`);
+                appendTerminalOutput(`<span class="term-cyan">visitor@backend-edge</span> (authorized visitor, TLS v1.3 encrypted)`);
                 break;
 
             case "clear":
