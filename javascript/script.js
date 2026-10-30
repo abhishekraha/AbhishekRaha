@@ -70,6 +70,7 @@ $(document).ready(function () {
     // ==========================================
     const anchorsList = [
         "home",
+        "projects",
         "terminal",
         "about",
         "achievements",
@@ -198,7 +199,8 @@ $(document).ready(function () {
             case "help":
                 appendTerminalOutput(`
 <span class="term-yellow">Available Commands:</span>
-  <span class="term-cyan">summary</span>      - Display Senior Backend Engineer profile & background
+  <span class="term-cyan">projects</span>      - Explore spotlight repositories (SCM & Avro-Studio)
+  <span class="term-cyan">summary</span>       - Display Senior Backend Engineer profile & background
   <span class="term-cyan">ai</span>           - Learn about how I use AI coding agents in development
   <span class="term-cyan">stack</span>        - List primary languages (Java, Python) and cloud stack
   <span class="term-cyan">metrics</span>      - Show engineering achievements and impact
@@ -209,6 +211,25 @@ $(document).ready(function () {
   <span class="term-cyan">contact</span>      - Get email, LinkedIn, and GitHub links
   <span class="term-cyan">whoami</span>       - Display visitor session telemetry
   <span class="term-cyan">clear</span>        - Clear the terminal console
+`);
+                break;
+
+            case "projects":
+            case "works":
+            case "repos":
+                appendTerminalOutput(`
+<span class="term-yellow">📁 SPOTLIGHT REPOSITORIES & WORKS:</span>
+  1. <span class="term-green">SimpleCredentialManager (SCM)</span>
+     • Type: Sovereign, Zero-Cloud Password & 2FA Vault
+     • Stack: Cryptography, Argon2id, Two-Tier Envelope Encryption, SQLite WAL, RFC 6238 TOTP
+     • Live App: <a href="https://abhishekraha.github.io/SimpleCredentialManager/" target="_blank" class="term-cyan">https://abhishekraha.github.io/SimpleCredentialManager/</a>
+     • Repo: <a href="https://github.com/abhishekraha/SimpleCredentialManager" target="_blank" class="term-yellow">github.com/abhishekraha/SimpleCredentialManager</a>
+
+  2. <span class="term-green">Avro-Studio</span>
+     • Type: Visual Avro IDL Schema Restructurer & Data Studio
+     • Stack: Apache Avro, IDL Parsing, BigQuery Schema Generator, Compatibility Engine
+     • Live App: <a href="https://abhishekraha.github.io/avro-studio/" target="_blank" class="term-cyan">https://abhishekraha.github.io/avro-studio/</a>
+     • Repo: <a href="https://github.com/abhishekraha/Avro-Studio" target="_blank" class="term-yellow">github.com/abhishekraha/Avro-Studio</a>
 `);
                 break;
 
@@ -403,6 +424,84 @@ $(document).ready(function () {
                     btn.html(originalHtml);
                 }, 2500);
             });
+        }
+    });
+
+    // ==========================================
+    // 8. Spotlight Projects Embedded Modal
+    // ==========================================
+    const repoModal = $("#repo-modal");
+    const repoModalIframe = $("#repo-modal-iframe");
+    const repoModalLoader = $("#repo-modal-loader");
+    const repoModalTitle = $("#repo-modal-title");
+    const repoModalSubtitle = $("#repo-modal-subtitle");
+    const repoModalUrlDisplay = $("#repo-modal-url-display");
+    const repoModalExtBtn = $("#repo-modal-ext-btn");
+    const repoModalGithubBtn = $("#repo-modal-github-btn");
+
+    function openRepoModal(title, subtitle, url, repoUrl) {
+        repoModalTitle.text(title);
+        repoModalSubtitle.text(subtitle);
+        repoModalUrlDisplay.text(url);
+        repoModalExtBtn.attr("href", url);
+        repoModalGithubBtn.attr("href", repoUrl);
+
+        repoModalLoader.show();
+        repoModalIframe.hide();
+        repoModalIframe.attr("src", url);
+
+        repoModal.addClass("active").attr("aria-hidden", "false");
+        $("body").addClass("modal-open-lock");
+    }
+
+    function closeRepoModal() {
+        repoModal.removeClass("active").attr("aria-hidden", "true");
+        $("body").removeClass("modal-open-lock");
+        // Clear iframe src to release resources and stop any active audio/video/scripts
+        setTimeout(() => {
+            repoModalIframe.attr("src", "about:blank");
+        }, 300);
+    }
+
+    // Hide loader once iframe loads
+    repoModalIframe.on("load", function () {
+        repoModalLoader.fadeOut(200);
+        $(this).fadeIn(250);
+    });
+
+    // Open modal on click
+    $(document).on("click", ".open-repo-modal-btn", function (e) {
+        e.preventDefault();
+        const title = $(this).attr("data-title") || "Embedded Project Preview";
+        const subtitle = $(this).attr("data-subtitle") || "";
+        const url = $(this).attr("data-url");
+        const repoUrl = $(this).attr("data-repo");
+        if (url) {
+            openRepoModal(title, subtitle, url, repoUrl);
+        }
+    });
+
+    // Close on close button or red dot click
+    $(document).on("click", "#repo-modal-close-btn, .repo-modal-close-dot", function () {
+        closeRepoModal();
+    });
+
+    // Expand toggle (green dot)
+    $(document).on("click", ".repo-modal-expand-dot", function () {
+        $(".repo-modal-dialog").toggleClass("is-fullscreen");
+    });
+
+    // Close on backdrop click (click outside dialog)
+    repoModal.on("click", function (e) {
+        if ($(e.target).is("#repo-modal")) {
+            closeRepoModal();
+        }
+    });
+
+    // Close on Escape key
+    $(document).on("keydown", function (e) {
+        if (e.key === "Escape" && repoModal.hasClass("active")) {
+            closeRepoModal();
         }
     });
 

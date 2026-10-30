@@ -45,6 +45,7 @@
     <nav class="header-links">
         <ul id="myMenu">
             <li data-menuanchor="home"><a href="#home">HOME</a></li>
+            <li data-menuanchor="projects"><a href="#projects">MY WORKS</a></li>
             <li data-menuanchor="terminal"><a href="#terminal">TERMINAL</a></li>
             <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
             <li data-menuanchor="achievements"><a href="#achievements">METRICS</a></li>
@@ -65,6 +66,7 @@
         <div class="nav-links">
             <ul>
                 <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href="#projects"><i class="fa fa-cubes"></i> MY WORKS</a></li>
                 <li><a href="#terminal"><i class="fa fa-terminal"></i> TERMINAL</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
                 <li><a href="#achievements"><i class="fa fa-line-chart"></i> METRICS</a></li>
@@ -113,8 +115,11 @@
             </div>
 
             <div class="hero-actions">
-                <a href="#terminal" class="btn-tech-primary">
-                    <i class="fa fa-terminal"></i> Launch Terminal
+                <a href="#projects" class="btn-tech-primary" style="background: linear-gradient(135deg, #0284c7, #00f2fe); border: none; color: #0a0d14; font-weight: 700;">
+                    <i class="fa fa-cubes"></i> Explore My Works
+                </a>
+                <a href="#terminal" class="btn-tech-secondary">
+                    <i class="fa fa-terminal"></i> Terminal
                 </a>
                 <a href="resume.html" class="btn-tech-secondary" style="border-color: #0284c7; color: #38bdf8;">
                     <i class="fa fa-file-text-o"></i> Resume
@@ -128,6 +133,129 @@
             </div>
         </div>
         <i id="moveDown" class="fa fa-chevron-down bounce"></i>
+    </div>
+
+    <!-- ==========================================
+         Section: Spotlight Projects / My Works
+         ========================================== -->
+    <div class="section" data-anchor="projects" id="projects-section" style="background:#080c16;">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// SPOTLIGHT REPOSITORIES</span>
+                <h2 class="section-title">My <span class="accent">Works</span></h2>
+                <p class="section-desc">Selected open-source systems, developer tooling, and security utilities built for performance and scale. Click any project to inspect its live embedded workspace or launch on GitHub.</p>
+            </div>
+
+            <div class="spotlight-projects-grid">
+                <!-- Project 1: SimpleCredentialManager -->
+                <div class="project-spotlight-card">
+                    <div class="project-card-header">
+                        <div class="project-badge-tech">
+                            <span class="sys-pulse-dot" style="background:#10b981;box-shadow:0 0 10px #10b981;"></span>
+                            <span>SECURITY &bull; CRYPTOGRAPHY</span>
+                        </div>
+                        <div class="project-ext-links">
+                            <a href="https://github.com/abhishekraha/SimpleCredentialManager" target="_blank" class="project-icon-link" title="View Source on GitHub">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://abhishekraha.github.io/SimpleCredentialManager/" target="_blank" class="project-icon-link" title="Open in New Tab">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-body">
+                        <h3 class="project-title">SimpleCredentialManager (SCM)</h3>
+                        <p class="project-tagline">Sovereign, Zero-Cloud Password & 2FA Vault</p>
+                        <p class="project-desc">
+                            A high-security, local-first credential management solution built for engineers and security-conscious users. Implements Argon2id key derivation, two-tier envelope encryption (KEK/DEK), SQLite with Write-Ahead Logging (WAL), RFC 6238 TOTP authenticator, and zeroed in-memory buffers.
+                        </p>
+
+                        <div class="project-feature-list">
+                            <div class="project-feature-item"><i class="fa fa-shield"></i> Argon2id &amp; Two-Tier Envelope Encryption</div>
+                            <div class="project-feature-item"><i class="fa fa-database"></i> SQLite WAL &amp; Local Sovereign Vault</div>
+                            <div class="project-feature-item"><i class="fa fa-key"></i> Native TOTP / 2FA Engine with Memory Zeroing</div>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="project-tag">Cryptography</span>
+                            <span class="project-tag">Argon2id</span>
+                            <span class="project-tag">Envelope Encryption</span>
+                            <span class="project-tag">TOTP 2FA</span>
+                            <span class="project-tag">SQLite WAL</span>
+                            <span class="project-tag">Zero-Cloud</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <button class="btn-project-preview open-repo-modal-btn" 
+                                data-title="Simple Credential Manager (SCM)"
+                                data-subtitle="Sovereign, Zero-Cloud Password & 2FA Vault"
+                                data-url="https://abhishekraha.github.io/SimpleCredentialManager/"
+                                data-repo="https://github.com/abhishekraha/SimpleCredentialManager">
+                            <i class="fa fa-window-maximize"></i> Open
+                        </button>
+                        <a href="https://github.com/abhishekraha/SimpleCredentialManager" target="_blank" class="btn-project-github">
+                            <i class="fa fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Avro-Studio -->
+                <div class="project-spotlight-card">
+                    <div class="project-card-header">
+                        <div class="project-badge-tech" style="border-color: rgba(0, 242, 254, 0.4); color: #00f2fe;">
+                            <span class="sys-pulse-dot" style="background:#00f2fe;box-shadow:0 0 10px #00f2fe;"></span>
+                            <span>DATA STREAMING &bull; SCHEMA TOOLING</span>
+                        </div>
+                        <div class="project-ext-links">
+                            <a href="https://github.com/abhishekraha/Avro-Studio" target="_blank" class="project-icon-link" title="View Source on GitHub">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://abhishekraha.github.io/avro-studio/" target="_blank" class="project-icon-link" title="Open in New Tab">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-body">
+                        <h3 class="project-title">Avro-Studio</h3>
+                        <p class="project-tagline">Visual Avro IDL Schema Restructurer & Data Studio</p>
+                        <p class="project-desc">
+                            Next-generation visual studio for Apache Avro IDL and JSON schemas. Provides real-time syntax checking, schema migration tracking, automated BigQuery schema generation, backward-compatibility validation, and automated data payload reconciliation for distributed event systems.
+                        </p>
+
+                        <div class="project-feature-list">
+                            <div class="project-feature-item"><i class="fa fa-code-fork"></i> Visual Avro IDL &amp; JSON Schema Restructuring</div>
+                            <div class="project-feature-item"><i class="fa fa-cloud"></i> BigQuery Schema Auto-Generator</div>
+                            <div class="project-feature-item"><i class="fa fa-check-square-o"></i> Schema Compatibility &amp; Payload Reconciliation</div>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="project-tag">Apache Avro</span>
+                            <span class="project-tag">Avro IDL</span>
+                            <span class="project-tag">BigQuery</span>
+                            <span class="project-tag">Schema Migration</span>
+                            <span class="project-tag">Event-Driven</span>
+                            <span class="project-tag">Kafka Tooling</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <button class="btn-project-preview open-repo-modal-btn" 
+                                data-title="Avro Studio"
+                                data-subtitle="Visual Avro IDL Schema Restructurer & Data Studio"
+                                data-url="https://abhishekraha.github.io/avro-studio/"
+                                data-repo="https://github.com/abhishekraha/Avro-Studio">
+                            <i class="fa fa-window-maximize"></i> Open
+                        </button>
+                        <a href="https://github.com/abhishekraha/Avro-Studio" target="_blank" class="btn-project-github">
+                            <i class="fa fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ==========================================
@@ -168,6 +296,7 @@ Type <span class="term-yellow">'help'</span> to see available commands or click 
 
                 <div class="terminal-chips">
                     <span class="term-chip" data-cmd="help">help</span>
+                    <span class="term-chip" data-cmd="projects">projects</span>
                     <span class="term-chip" data-cmd="summary">summary</span>
                     <span class="term-chip" data-cmd="ai">ai-workflows</span>
                     <span class="term-chip" data-cmd="stack">stack</span>
@@ -186,7 +315,7 @@ Type <span class="term-yellow">'help'</span> to see available commands or click 
          Section 3: About Me & Code Snippet
          ========================================== -->
     <div class="section aboutme" data-anchor="about">
-        <div class="tech-container">
+        <div class="tech-container about-container">
             <div class="section-header">
                 <span class="section-tag">// WHO I AM</span>
                 <h2 class="section-title">About <span class="accent">Abhishek</span></h2>
@@ -229,40 +358,6 @@ Type <span class="term-yellow">'help'</span> to see available commands or click 
                         <div class="about-meta-item">
                             <i class="fa fa-cloud"></i> GCP Cloud Architect
                         </div>
-                    </div>
-                </div>
-
-                <!-- Code Card -->
-                <div class="about-code-card">
-                    <div class="code-editor-header">
-                        <div class="terminal-dots">
-                            <span class="terminal-dot red"></span>
-                            <span class="terminal-dot yellow"></span>
-                            <span class="terminal-dot green"></span>
-                        </div>
-                        <div class="code-editor-tabs">
-                            <span class="code-tab">BackendEngineer.java</span>
-                        </div>
-                        <span style="font-size: 0.75rem; color: #64748b;">UTF-8</span>
-                    </div>
-                    <div class="code-body">
-<pre><code><span class="kw">package</span> <span class="var">com.abhishek.backend</span>;
-
-<span class="kw">public class</span> <span class="type">BackendEngineer</span> {
-    <span class="kw">private final</span> <span class="type">String</span>   <span class="var">name</span> = <span class="str">"Abhishek Raha"</span>;
-    <span class="kw">private final</span> <span class="type">String</span>   <span class="var">role</span> = <span class="str">"Senior Backend Engineer (AI-Assisted Dev)"</span>;
-    <span class="kw">private final</span> <span class="type">String</span>[] <span class="var">primaryStack</span> = {<span class="str">"Java"</span>, <span class="str">"Python"</span>};
-    <span class="kw">private final</span> <span class="type">String</span>   <span class="var">accreditation</span> = <span class="str">"Accredited Enterprise Engineer (HSBC)"</span>;
-    <span class="kw">private final</span> <span class="type">String</span>   <span class="var">cloud</span> = <span class="str">"GCP Certified Cloud Architect"</span>;
-
-    <span class="comment">// Enterprise Software Development using AI & Cloud Architecture</span>
-    <span class="kw">public void</span> <span class="type">buildEnterpriseSystems</span>() {
-        <span class="var">useAiCodingAgents</span>();       <span class="comment">// Rapid feature development & automated tests</span>
-        <span class="var">engineerReusableSkills</span>();  <span class="comment">// Reusable workflows & developer skills</span>
-        <span class="var">provisionCloudInfra</span>();     <span class="comment">// GCP Infrastructure as Code</span>
-        <span class="var">refactorLowLatencyJava</span>();  <span class="comment">// Concurrency & high-throughput optimization</span>
-    }
-}</code></pre>
                     </div>
                 </div>
             </div>
@@ -778,6 +873,53 @@ Type <span class="term-yellow">'help'</span> to see available commands or click 
 
 </div>
 <!-- End Fullpage Container -->
+
+<!-- ==========================================
+     Modal Popup: Embedded GitHub Pages Preview
+     ========================================== -->
+<div id="repo-modal" class="repo-modal-overlay" aria-hidden="true" role="dialog">
+    <div class="repo-modal-dialog">
+        <div class="repo-modal-header">
+            <div class="repo-modal-meta">
+                <div class="terminal-dots">
+                    <span class="terminal-dot red repo-modal-close-dot" title="Close Window"></span>
+                    <span class="terminal-dot yellow" title="Minimize"></span>
+                    <span class="terminal-dot green repo-modal-expand-dot" title="Toggle Fullscreen"></span>
+                </div>
+                <div class="repo-modal-titles">
+                    <h4 id="repo-modal-title" class="repo-modal-title">Project Name</h4>
+                    <span id="repo-modal-subtitle" class="repo-modal-subtitle">Project Subtitle</span>
+                </div>
+            </div>
+
+            <div class="repo-modal-actions">
+                <a id="repo-modal-ext-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-modal-action" title="Open GitHub Pages in New Tab">
+                    <i class="fa fa-external-link"></i> <span>Open Site</span>
+                </a>
+                <a id="repo-modal-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-modal-action" title="View Source on GitHub">
+                    <i class="fa fa-github"></i> <span>Repository</span>
+                </a>
+                <button type="button" class="btn-modal-close" id="repo-modal-close-btn" title="Close Preview (Esc)">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="repo-modal-address-bar">
+            <i class="fa fa-lock" style="color:#10b981;font-size:0.85rem;"></i>
+            <span class="repo-modal-url-text" id="repo-modal-url-display">https://abhishekraha.github.io/...</span>
+            <span class="repo-modal-status-badge"><span class="sys-pulse-dot"></span> LIVE APP</span>
+        </div>
+
+        <div class="repo-modal-body">
+            <div class="repo-modal-loader" id="repo-modal-loader">
+                <div class="spinner-circle"></div>
+                <p>Loading application sandbox...</p>
+            </div>
+            <iframe id="repo-modal-iframe" class="repo-modal-iframe" title="Embedded Project Window" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"></iframe>
+        </div>
+    </div>
+</div>
 
 <!-- Vendor Scripts -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
