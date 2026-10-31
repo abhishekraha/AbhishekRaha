@@ -1368,7 +1368,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .spotlight-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
   gap: 2rem;
   margin-top: 2.5rem;
   text-align: left;
@@ -1817,7 +1817,8 @@ h1, h2, h3, h4, h5, h6 {
   .hero-title {
     font-size: 3.5rem;
   }
-  .about-split-layout {
+  /* spotlight: switch to single column earlier */
+  .spotlight-projects-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1850,6 +1851,47 @@ h1, h2, h3, h4, h5, h6 {
   .recognition-grid {
     grid-template-columns: 1fr;
   }
+  /* spotlight cards */
+  .spotlight-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .project-spotlight-card {
+    padding: 1.25rem;
+  }
+  .project-card-header {
+    gap: 0.5rem;
+  }
+  .project-card-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .btn-project-preview,
+  .btn-project-github {
+    width: 100%;
+    justify-content: center;
+  }
+  /* about */
+  .about-bio-card {
+    padding: 1.25rem;
+  }
+  .tech-container.about-container {
+    padding: 1.5rem 1rem;
+  }
+  /* modal */
+  .repo-modal-overlay {
+    padding: 0;
+  }
+  .repo-modal-dialog {
+    height: 100dvh;
+    border-radius: 0;
+    width: 100%;
+  }
+  .repo-modal-address-bar {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1870,5 +1912,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .sys-status-badge {
     display: none;
+  }
+  /* spotlight on very small screens */
+  .project-tech-tags {
+    gap: 0.3rem;
+  }
+  .tech-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.45rem;
+  }
+  .project-features li {
+    font-size: 0.8rem;
   }
 }
