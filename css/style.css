@@ -1907,3 +1907,29 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
   }
 }
+/* Mobile text sizing – retain original mobile font sizes while keeping desktop sizes unchanged */
+@media (max-width: 504px) {
+  .hero-title {
+    font-size: 2.2rem; /* same as 480px rule to avoid oversized title */
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-typewriter-text {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  /* ensure body text scales naturally – no change needed */
+}
+
+/* Mobile top padding to avoid hero badge being hidden under nav bar */
+@media (max-width: 650px) {
+  .hero-content {
+    padding-top: 4rem; /* add space above hero badge */
+  }
+}
