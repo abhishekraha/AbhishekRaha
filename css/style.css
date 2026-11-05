@@ -1367,22 +1367,24 @@ h1, h2, h3, h4, h5, h6 {
    Spotlight Projects / "My Works" Section Styling
    ========================================================================== */
 #projects-section .tech-container {
-  max-width: 1240px;
+  max-width: 1560px;
+  width: 94%;
+  padding: 3rem 1.5rem;
 }
 
 .spotlight-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
-  gap: 1.75rem;
-  margin-top: 2.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem;
+  margin-top: 2.25rem;
   text-align: left;
 }
 
 .project-spotlight-card {
-  background: rgba(15, 20, 34, 0.75);
+  background: rgba(13, 18, 32, 0.78);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 14px;
+  padding: 2.25rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1406,9 +1408,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-spotlight-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(0, 242, 254, 0.35);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 242, 254, 0.12);
+  transform: translateY(-6px);
+  border-color: rgba(0, 242, 254, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 28px rgba(0, 242, 254, 0.15);
 }
 
 .project-spotlight-card:hover::before {
@@ -1419,7 +1421,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.4rem;
+  gap: 0.75rem;
 }
 
 .project-badge-tech {
@@ -1427,14 +1430,15 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--accent-emerald);
   background: rgba(16, 185, 129, 0.08);
   border: 1px solid rgba(16, 185, 129, 0.25);
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 20px;
   letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .project-ext-links {
@@ -1465,50 +1469,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-title {
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 0.35rem 0;
+  margin: 0 0 0.4rem 0;
   letter-spacing: -0.01em;
 }
 
 .project-tagline {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--accent-cyan);
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
   font-weight: 500;
+  line-height: 1.45;
 }
 
 .project-desc {
-  font-size: 0.93rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #94a3b8;
+  margin-bottom: 1.35rem;
 }
 
 .project-feature-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.4rem;
-  padding: 0.85rem 1rem;
-  background: rgba(10, 13, 20, 0.6);
-  border-radius: 8px;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(10, 13, 20, 0.65);
+  border-radius: 10px;
   border-left: 3px solid var(--accent-cyan);
 }
 
 .project-feature-item {
-  font-size: 0.83rem;
+  font-size: 0.86rem;
   color: var(--text-main);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.65rem;
+  line-height: 1.45;
 }
 
 .project-feature-item i {
   color: var(--accent-cyan);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   width: 14px;
 }
 
@@ -1521,19 +1527,19 @@ h1, h2, h3, h4, h5, h6 {
 .project-tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.5rem;
   margin-top: auto;
   margin-bottom: 1.75rem;
 }
 
 .project-tag {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: #94a3b8;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
@@ -1545,8 +1551,8 @@ h1, h2, h3, h4, h5, h6 {
 .project-card-footer {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
-  padding-top: 1.25rem;
+  gap: 0.9rem;
+  padding-top: 1.35rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -1556,10 +1562,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.7rem 1.2rem;
+  padding: 0.75rem 1.3rem;
   border-radius: 8px;
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 600;
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(79, 172, 254, 0.25));
   border: 1px solid var(--accent-cyan);
@@ -1824,10 +1830,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Responsive Rules
    ========================================================================== */
-@media (max-width: 992px) {
-  /* spotlight: switch to single column earlier */
+@media (max-width: 1180px) {
+  /* spotlight: switch to single column on tablets and laptops for comfortable width */
+  #projects-section .tech-container {
+    max-width: 720px;
+  }
   .spotlight-projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 }
 
