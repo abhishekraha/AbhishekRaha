@@ -1366,10 +1366,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Spotlight Projects / "My Works" Section Styling
    ========================================================================== */
+#projects-section .tech-container {
+  max-width: 1240px;
+}
+
 .spotlight-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
+  gap: 1.75rem;
   margin-top: 2.5rem;
   text-align: left;
 }
@@ -1508,10 +1512,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 14px;
 }
 
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .project-tech-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  margin-top: auto;
   margin-bottom: 1.75rem;
 }
 
