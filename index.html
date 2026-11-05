@@ -45,9 +45,9 @@
     <nav class="header-links">
         <ul id="myMenu">
             <li data-menuanchor="home"><a href="#home">HOME</a></li>
-            <li data-menuanchor="projects"><a href="#projects">MY WORKS</a></li>
-            <li data-menuanchor="terminal"><a href="#terminal">TERMINAL</a></li>
             <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+            <li data-menuanchor="terminal"><a href="#terminal">TERMINAL</a></li>
+            <li data-menuanchor="projects"><a href="#projects">MY WORKS</a></li>
             <li data-menuanchor="achievements"><a href="#achievements">METRICS</a></li>
             <li data-menuanchor="workExperience"><a href="#workExperience">EXPERIENCE</a></li>
             <li data-menuanchor="technologies"><a href="#technologies">SKILLS</a></li>
@@ -66,9 +66,9 @@
         <div class="nav-links">
             <ul>
                 <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
-                <li><a href="#projects"><i class="fa fa-cubes"></i> MY WORKS</a></li>
-                <li><a href="#terminal"><i class="fa fa-terminal"></i> TERMINAL</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+                <li><a href="#terminal"><i class="fa fa-terminal"></i> TERMINAL</a></li>
+                <li><a href="#projects"><i class="fa fa-cubes"></i> MY WORKS</a></li>
                 <li><a href="#achievements"><i class="fa fa-line-chart"></i> METRICS</a></li>
                 <li><a href="#workExperience"><i class="fa fa-briefcase"></i> EXPERIENCE</a></li>
                 <li><a href="#technologies"><i class="fa fa-code"></i> SKILLS</a></li>
@@ -115,11 +115,14 @@
             </div>
 
             <div class="hero-actions">
-                <a href="#projects" class="btn-tech-primary" style="background: linear-gradient(135deg, #0284c7, #00f2fe); border: none; color: #0a0d14; font-weight: 700;">
-                    <i class="fa fa-cubes"></i> Explore My Works
+                <a href="#about" class="btn-tech-primary" style="background: linear-gradient(135deg, #0284c7, #00f2fe); border: none; color: #0a0d14; font-weight: 700;">
+                    <i class="fa fa-user"></i> About Me
                 </a>
                 <a href="#terminal" class="btn-tech-secondary">
                     <i class="fa fa-terminal"></i> Terminal
+                </a>
+                <a href="#projects" class="btn-tech-secondary">
+                    <i class="fa fa-cubes"></i> My Works
                 </a>
                 <a href="resume.html" class="btn-tech-secondary" style="border-color: #0284c7; color: #38bdf8;">
                     <i class="fa fa-file-text-o"></i> Resume
@@ -136,7 +139,113 @@
     </div>
 
     <!-- ==========================================
-         Section: Spotlight Projects / My Works
+         Section 2: About Me & Background
+         ========================================== -->
+    <div class="section aboutme" data-anchor="about">
+        <div class="tech-container about-container">
+            <div class="section-header">
+                <span class="section-tag">// WHO I AM</span>
+                <h2 class="section-title">About <span class="accent">Abhishek</span></h2>
+            </div>
+
+            <div class="about-split-layout">
+                <!-- Bio Card -->
+                <div class="tech-card-glass about-bio-card">
+                    <div class="about-bio-text">
+                        <p style="font-size: 1.15rem; font-weight: 600; color: #ffffff;">
+                            Hey, I'm Abhishek Raha! 👋
+                        </p>
+                        <p>
+                            I'm a <strong>Senior Backend Engineer</strong> with <strong>7+ years of experience</strong> architecting enterprise systems at <strong>HSBC Technology</strong>, actively using <strong>AI to accelerate software development</strong>.
+                        </p>
+                        <div class="about-bio-highlight">
+                            "I build things, break things, fix things, and leverage AI coding agents to multiply development velocity."
+                        </div>
+                        <p>
+                            My primary development focus is <strong>Java and Python</strong>, combined with practical <strong>AI-assisted software engineering</strong>: orchestrating coding-agent workflows, subagents, and domain-specific reusable skills for feature engineering, automated testing, and complex codebase refactoring.
+                        </p>
+                        <p>
+                            My background is deeply rooted in enterprise distributed systems and cloud architecture: certified <strong>Google Cloud Professional Cloud Architect</strong>, <strong>HSBC Accredited Enterprise Engineer</strong> (technical leadership & governance), and IT Service Owner with foundational experience in financial backend systems and Kafka messaging.
+                        </p>
+                        <p>
+                            When I'm not reigning tyranny over code or orchestrating agent workflows, I'm usually out on the road collecting memories, miles, and questionable life choices — or sleeping like I've been paid to do it.
+                        </p>
+                    </div>
+
+                    <div class="about-meta-list">
+                        <div class="about-meta-item">
+                            <i class="fa fa-map-marker"></i> India
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-briefcase"></i> HSBC Technology
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-institution"></i> Accredited Enterprise Engineer (HSBC)
+                        </div>
+                        <div class="about-meta-item">
+                            <i class="fa fa-cloud"></i> GCP Cloud Architect
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         Section 3: Interactive Terminal Emulator
+         ========================================== -->
+    <div class="section" data-anchor="terminal" id="terminal-section" style="background:#070a10;">
+        <div class="tech-container">
+            <div class="section-header">
+                <span class="section-tag">// INTERACTIVE SHELL</span>
+                <h2 class="section-title">FinTech <span class="accent">Gateway</span> Console</h2>
+                <p class="section-desc">Type commands below or click the quick pills to query live system metrics, architecture specs, and career telemetry.</p>
+            </div>
+
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <span class="terminal-title">abhishek@backend-dev: ~/portfolio</span>
+                    <span class="sys-status-badge" style="padding: 2px 8px; font-size: 0.68rem;">TLS v1.3</span>
+                </div>
+                
+                <div class="terminal-body">
+                    <div id="terminal-output" class="terminal-output">
+<span class="term-dim">========================================================================</span>
+<span class="term-cyan">Developer Gateway v5.0-RELEASE (Java / Python / AI-Assisted)</span>
+<span class="term-green">System Status: ONLINE</span> | <span class="term-yellow">Role: SENIOR BACKEND ENGINEER</span> | <span class="term-coral">Primary: JAVA &amp; PYTHON</span>
+Type <span class="term-yellow">'help'</span> to see available commands or click the shortcut chips below.
+<span class="term-dim">========================================================================</span>
+                    </div>
+                    <div class="terminal-input-row">
+                        <span class="terminal-prompt">abhishek@backend-dev:~$</span>
+                        <input type="text" id="terminal-cmd-input" class="terminal-input" placeholder="type 'help', 'summary', 'stack', 'ai'..." autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+
+                <div class="terminal-chips">
+                    <span class="term-chip" data-cmd="help">help</span>
+                    <span class="term-chip" data-cmd="projects">projects</span>
+                    <span class="term-chip" data-cmd="summary">summary</span>
+                    <span class="term-chip" data-cmd="ai">ai-workflows</span>
+                    <span class="term-chip" data-cmd="stack">stack</span>
+                    <span class="term-chip" data-cmd="metrics">metrics</span>
+                    <span class="term-chip" data-cmd="experience">experience</span>
+                    <span class="term-chip" data-cmd="certs">certs</span>
+                    <span class="term-chip" data-cmd="awards">awards</span>
+                    <span class="term-chip" data-cmd="cat resume.json">cat resume.json</span>
+                    <span class="term-chip" data-cmd="clear">clear</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         Section 4: Spotlight Projects / My Works
          ========================================== -->
     <div class="section" data-anchor="projects" id="projects-section" style="background:#080c16;">
         <div class="tech-container">
@@ -147,7 +256,62 @@
             </div>
 
             <div class="spotlight-projects-grid">
-                <!-- Project 1: SimpleCredentialManager -->
+                <!-- Project 1: Track My Market -->
+                <div class="project-spotlight-card">
+                    <div class="project-card-header">
+                        <div class="project-badge-tech" style="border-color: rgba(237, 139, 0, 0.4); color: #f59e0b; background: rgba(245, 158, 11, 0.08);">
+                            <span class="sys-pulse-dot" style="background:#f59e0b;box-shadow:0 0 10px #f59e0b;"></span>
+                            <span>ULTRA-LOW LATENCY &bull; IPC & SBE</span>
+                        </div>
+                        <div class="project-ext-links">
+                            <a href="https://github.com/abhishekraha/track-my-market" target="_blank" class="project-icon-link" title="View Source on GitHub">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://abhishekraha.github.io/track-my-market/" target="_blank" class="project-icon-link" title="Open in New Tab">
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card-body">
+                        <h3 class="project-title">Track My Market</h3>
+                        <p class="project-tagline">Ultra-Low Latency Aeron IPC Market Data Engine</p>
+                        <p class="project-desc">
+                            Ultra-low latency financial market data streaming engine powered by embedded Real Logic Aeron IPC (&lt; 850ns bus transit), zero-allocation Simple Binary Encoding (SBE v1), and Java 25 Virtual Threads. Delivers real-time quotes across NSE/BSE and global indices with zero KYC, zero Demat, and zero API keys.
+                        </p>
+
+                        <div class="project-feature-list">
+                            <div class="project-feature-item"><i class="fa fa-bolt"></i> Real Logic Aeron IPC &bull; Sub-Microsecond Shared Memory</div>
+                            <div class="project-feature-item"><i class="fa fa-microchip"></i> Zero-Allocation SBE v1 Direct Buffer Encoding</div>
+                            <div class="project-feature-item"><i class="fa fa-line-chart"></i> Java 25 Virtual Threads &bull; 10k+ SSE Concurrent Streams</div>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="project-tag">Java 25</span>
+                            <span class="project-tag">Aeron IPC</span>
+                            <span class="project-tag">SBE v1</span>
+                            <span class="project-tag">Virtual Threads</span>
+                            <span class="project-tag">Nginx Ingress</span>
+                            <span class="project-tag">Docker Compose</span>
+                            <span class="project-tag">TradingView Charts</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <button class="btn-project-preview open-repo-modal-btn" 
+                                data-title="Track My Market"
+                                data-subtitle="Ultra-Low Latency Aeron IPC Market Data Engine"
+                                data-url="https://abhishekraha.github.io/track-my-market/"
+                                data-repo="https://github.com/abhishekraha/track-my-market">
+                            <i class="fa fa-window-maximize"></i> Open
+                        </button>
+                        <a href="https://github.com/abhishekraha/track-my-market" target="_blank" class="btn-project-github">
+                            <i class="fa fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: SimpleCredentialManager -->
                 <div class="project-spotlight-card">
                     <div class="project-card-header">
                         <div class="project-badge-tech">
@@ -201,7 +365,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Avro-Studio -->
+                <!-- Project 3: Avro-Studio -->
                 <div class="project-spotlight-card">
                     <div class="project-card-header">
                         <div class="project-badge-tech" style="border-color: rgba(0, 242, 254, 0.4); color: #00f2fe;">
@@ -225,16 +389,15 @@
                             Next-generation visual studio for Apache Avro IDL and JSON schemas. Provides real-time syntax checking, schema migration tracking, automated BigQuery schema generation, backward-compatibility validation, and automated data payload reconciliation for distributed event systems.
                         </p>
 
-                        
-                         <div class="project-feature-list">
-                             <div class="project-feature-item"><i class="fa fa-code-fork"></i> Visual Avro IDL &amp; JSON Schema Restructuring</div>
-                             <div class="project-feature-item"><i class="fa fa-check-square-o"></i> Schema Compatibility &amp; Payload Reconciliation</div>
-                         </div>
+                        <div class="project-feature-list">
+                            <div class="project-feature-item"><i class="fa fa-code-fork"></i> Visual Avro IDL &amp; JSON Schema Restructuring</div>
+                            <div class="project-feature-item"><i class="fa fa-check-square-o"></i> Schema Compatibility &amp; Payload Reconciliation</div>
+                        </div>
 
                         <div class="project-tech-tags">
-                             <span class="project-tag">Apache Avro</span>
-                             <span class="project-tag">Avro IDL</span>
-                         </div>
+                            <span class="project-tag">Apache Avro</span>
+                            <span class="project-tag">Avro IDL</span>
+                        </div>
                     </div>
 
                     <div class="project-card-footer">
@@ -248,112 +411,6 @@
                         <a href="https://github.com/abhishekraha/Avro-Studio" target="_blank" class="btn-project-github">
                             <i class="fa fa-github"></i> GitHub Repo
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==========================================
-         Section 2: Interactive Terminal Emulator
-         ========================================== -->
-    <div class="section" data-anchor="terminal" id="terminal-section" style="background:#070a10;">
-        <div class="tech-container">
-            <div class="section-header">
-                <span class="section-tag">// INTERACTIVE SHELL</span>
-                <h2 class="section-title">FinTech <span class="accent">Gateway</span> Console</h2>
-                <p class="section-desc">Type commands below or click the quick pills to query live system metrics, architecture specs, and career telemetry.</p>
-            </div>
-
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                    </div>
-                    <span class="terminal-title">abhishek@backend-dev: ~/portfolio</span>
-                    <span class="sys-status-badge" style="padding: 2px 8px; font-size: 0.68rem;">TLS v1.3</span>
-                </div>
-                
-                <div class="terminal-body">
-                    <div id="terminal-output" class="terminal-output">
-<span class="term-dim">========================================================================</span>
-<span class="term-cyan">Developer Gateway v5.0-RELEASE (Java / Python / AI-Assisted)</span>
-<span class="term-green">System Status: ONLINE</span> | <span class="term-yellow">Role: SENIOR BACKEND ENGINEER</span> | <span class="term-coral">Primary: JAVA &amp; PYTHON</span>
-Type <span class="term-yellow">'help'</span> to see available commands or click the shortcut chips below.
-<span class="term-dim">========================================================================</span>
-                    </div>
-                    <div class="terminal-input-row">
-                        <span class="terminal-prompt">abhishek@backend-dev:~$</span>
-                        <input type="text" id="terminal-cmd-input" class="terminal-input" placeholder="type 'help', 'summary', 'stack', 'ai'..." autocomplete="off" spellcheck="false">
-                    </div>
-                </div>
-
-                <div class="terminal-chips">
-                    <span class="term-chip" data-cmd="help">help</span>
-                    <span class="term-chip" data-cmd="projects">projects</span>
-                    <span class="term-chip" data-cmd="summary">summary</span>
-                    <span class="term-chip" data-cmd="ai">ai-workflows</span>
-                    <span class="term-chip" data-cmd="stack">stack</span>
-                    <span class="term-chip" data-cmd="metrics">metrics</span>
-                    <span class="term-chip" data-cmd="experience">experience</span>
-                    <span class="term-chip" data-cmd="certs">certs</span>
-                    <span class="term-chip" data-cmd="awards">awards</span>
-                    <span class="term-chip" data-cmd="cat resume.json">cat resume.json</span>
-                    <span class="term-chip" data-cmd="clear">clear</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==========================================
-         Section 3: About Me & Code Snippet
-         ========================================== -->
-    <div class="section aboutme" data-anchor="about">
-        <div class="tech-container about-container">
-            <div class="section-header">
-                <span class="section-tag">// WHO I AM</span>
-                <h2 class="section-title">About <span class="accent">Abhishek</span></h2>
-            </div>
-
-            <div class="about-split-layout">
-                <!-- Bio Card -->
-                <div class="tech-card-glass about-bio-card">
-                    <div class="about-bio-text">
-                        <p style="font-size: 1.15rem; font-weight: 600; color: #ffffff;">
-                            Hey, I'm Abhishek Raha! 👋
-                        </p>
-                        <p>
-                            I'm a <strong>Senior Backend Engineer</strong> with <strong>7+ years of experience</strong> architecting enterprise systems at <strong>HSBC Technology</strong>, actively using <strong>AI to accelerate software development</strong>.
-                        </p>
-                        <div class="about-bio-highlight">
-                            "I build things, break things, fix things, and leverage AI coding agents to multiply development velocity."
-                        </div>
-                        <p>
-                            My primary development focus is <strong>Java and Python</strong>, combined with practical <strong>AI-assisted software engineering</strong>: orchestrating coding-agent workflows, subagents, and domain-specific reusable skills for feature engineering, automated testing, and complex codebase refactoring.
-                        </p>
-                        <p>
-                            My background is deeply rooted in enterprise distributed systems and cloud architecture: certified <strong>Google Cloud Professional Cloud Architect</strong>, <strong>HSBC Accredited Enterprise Engineer</strong> (technical leadership & governance), and IT Service Owner with foundational experience in financial backend systems and Kafka messaging.
-                        </p>
-                        <p>
-                            When I'm not reigning tyranny over code or orchestrating agent workflows, I'm usually out on the road collecting memories, miles, and questionable life choices — or sleeping like I've been paid to do it.
-                        </p>
-                    </div>
-
-                    <div class="about-meta-list">
-                        <div class="about-meta-item">
-                            <i class="fa fa-map-marker"></i> India
-                        </div>
-                        <div class="about-meta-item">
-                            <i class="fa fa-briefcase"></i> HSBC Technology
-                        </div>
-                        <div class="about-meta-item">
-                            <i class="fa fa-institution"></i> Accredited Enterprise Engineer (HSBC)
-                        </div>
-                        <div class="about-meta-item">
-                            <i class="fa fa-cloud"></i> GCP Cloud Architect
-                        </div>
                     </div>
                 </div>
             </div>

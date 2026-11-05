@@ -70,9 +70,9 @@ $(document).ready(function () {
     // ==========================================
     const anchorsList = [
         "home",
-        "projects",
-        "terminal",
         "about",
+        "terminal",
+        "projects",
         "achievements",
         "workExperience",
         "technologies",
@@ -110,7 +110,7 @@ $(document).ready(function () {
             $.fn.fullpage.moveSectionDown();
         } else {
             $('html, body').animate({
-                scrollTop: $("#terminal-section").offset().top - 64
+                scrollTop: $(".aboutme").offset().top - 64
             }, 600);
         }
     });
@@ -153,6 +153,30 @@ $(document).ready(function () {
             "Pat on the Back (2025, 2019)",
             "Circle of Excellence (2022)",
             "Star Performer (2021)"
+        ],
+        projects: [
+            {
+                name: "Track My Market",
+                type: "Ultra-Low Latency Aeron IPC Market Data Engine",
+                stack: ["Java 25", "Aeron IPC", "SBE v1", "Virtual Threads", "Docker", "Nginx", "TradingView Lightweight Charts"],
+                transit_latency: "< 850 nanoseconds",
+                live_url: "https://abhishekraha.github.io/track-my-market/",
+                repo: "https://github.com/abhishekraha/track-my-market"
+            },
+            {
+                name: "SimpleCredentialManager (SCM)",
+                type: "Sovereign, Zero-Cloud Password & 2FA Vault",
+                stack: ["Argon2id", "Envelope Encryption", "SQLite WAL", "RFC 6238 TOTP"],
+                live_url: "https://abhishekraha.github.io/SimpleCredentialManager/",
+                repo: "https://github.com/abhishekraha/SimpleCredentialManager"
+            },
+            {
+                name: "Avro-Studio",
+                type: "Visual Avro IDL Schema Restructurer & Data Studio",
+                stack: ["Apache Avro", "IDL Parsing", "BigQuery Schema", "Compatibility Engine"],
+                live_url: "https://abhishekraha.github.io/avro-studio/",
+                repo: "https://github.com/abhishekraha/Avro-Studio"
+            }
         ]
     };
 
@@ -199,7 +223,7 @@ $(document).ready(function () {
             case "help":
                 appendTerminalOutput(`
 <span class="term-yellow">Available Commands:</span>
-  <span class="term-cyan">projects</span>      - Explore spotlight repositories (SCM & Avro-Studio)
+  <span class="term-cyan">projects</span>      - Explore spotlight repositories (Track My Market, SCM & Avro-Studio)
   <span class="term-cyan">summary</span>       - Display Senior Backend Engineer profile & background
   <span class="term-cyan">ai</span>           - Learn about how I use AI coding agents in development
   <span class="term-cyan">stack</span>        - List primary languages (Java, Python) and cloud stack
@@ -219,13 +243,20 @@ $(document).ready(function () {
             case "repos":
                 appendTerminalOutput(`
 <span class="term-yellow">📁 SPOTLIGHT REPOSITORIES & WORKS:</span>
-  1. <span class="term-green">SimpleCredentialManager (SCM)</span>
+  1. <span class="term-green">Track My Market</span>
+     • Type: Ultra-Low Latency Aeron IPC Financial Market Data Engine
+     • Stack: Java 25 (Virtual Threads), Real Logic Aeron IPC, SBE v1, Nginx Proxy, TradingView Charts
+     • Latency: &lt; 850ns transit latency over shared memory IPC, 0.00ms GC stalls
+     • Live App: <a href="https://abhishekraha.github.io/track-my-market/" target="_blank" class="term-cyan">https://abhishekraha.github.io/track-my-market/</a>
+     • Repo: <a href="https://github.com/abhishekraha/track-my-market" target="_blank" class="term-yellow">github.com/abhishekraha/track-my-market</a>
+
+  2. <span class="term-green">SimpleCredentialManager (SCM)</span>
      • Type: Sovereign, Zero-Cloud Password & 2FA Vault
      • Stack: Cryptography, Argon2id, Two-Tier Envelope Encryption, SQLite WAL, RFC 6238 TOTP
      • Live App: <a href="https://abhishekraha.github.io/SimpleCredentialManager/" target="_blank" class="term-cyan">https://abhishekraha.github.io/SimpleCredentialManager/</a>
      • Repo: <a href="https://github.com/abhishekraha/SimpleCredentialManager" target="_blank" class="term-yellow">github.com/abhishekraha/SimpleCredentialManager</a>
 
-  2. <span class="term-green">Avro-Studio</span>
+  3. <span class="term-green">Avro-Studio</span>
      • Type: Visual Avro IDL Schema Restructurer & Data Studio
      • Stack: Apache Avro, IDL Parsing, BigQuery Schema Generator, Compatibility Engine
      • Live App: <a href="https://abhishekraha.github.io/avro-studio/" target="_blank" class="term-cyan">https://abhishekraha.github.io/avro-studio/</a>
